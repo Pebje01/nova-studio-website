@@ -21,12 +21,12 @@ export default function Navbar() {
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.3 }}
-      className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between pl-[10px] pr-[16px] lg:pl-[54px] lg:pr-[68px]"
-      style={{ height: 72 }}
+      className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between pl-[14px] pr-[18px] lg:pl-[36px] lg:pr-[68px]"
+      style={{ height: 92 }}
     >
-      {/* Background pill — slim */}
+      {/* Background pill */}
       <div
-        className={`absolute inset-x-[48px] lg:inset-x-[52px] top-[8px] h-[56px] transition-all duration-300 ${
+        className={`absolute inset-x-[12px] lg:inset-x-[16px] top-[8px] bottom-[8px] transition-all duration-300 ${
           scrolled
             ? "bg-white/90 shadow-sm backdrop-blur-md"
             : "bg-white/20 backdrop-blur-sm"
@@ -38,6 +38,7 @@ export default function Navbar() {
       <Link
         href="/"
         className="relative z-10"
+        style={{ marginLeft: 20 }}
       >
         <Image
           src={scrolled ? "/logo-dark.svg" : "/logo-white.svg"}
@@ -45,7 +46,7 @@ export default function Navbar() {
           width={120}
           height={48}
           className="transition-opacity duration-300"
-          style={{ height: 110, width: "auto" }}
+          style={{ height: 120, width: "auto" }}
           priority
         />
       </Link>
@@ -68,11 +69,7 @@ export default function Navbar() {
         ))}
         <Link
           href="#contact"
-          className={`font-medium transition-all duration-300 ${
-            scrolled
-              ? "bg-brown-dark text-white hover:bg-brown-medium"
-              : "bg-white text-brown-dark hover:bg-cream"
-          }`}
+          className="group font-medium text-white transition-all duration-300 bg-brown-dark hover:bg-sage hover:text-white"
           style={{
             fontSize: 12,
             padding: "10px 24px",
@@ -80,7 +77,14 @@ export default function Navbar() {
             letterSpacing: "0.3px",
           }}
         >
-          Boek een proefles
+          <span className="flex items-center gap-2">
+            Boek een proefles
+            <motion.span
+              className="inline-flex text-[14px] leading-none transition-transform duration-300 group-hover:-rotate-45"
+            >
+              →
+            </motion.span>
+          </span>
         </Link>
       </div>
 
@@ -138,7 +142,7 @@ export default function Navbar() {
               <Link
                 href="#contact"
                 onClick={() => setMobileOpen(false)}
-                className="mt-2 bg-brown-dark px-5 py-2 text-center text-xs font-medium text-white"
+                className="mt-2 bg-sage px-5 py-2 text-center text-xs font-medium text-white"
                 style={{ borderRadius: 50 }}
               >
                 Boek een proefles

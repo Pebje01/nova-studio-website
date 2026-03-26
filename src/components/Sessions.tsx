@@ -53,7 +53,7 @@ export default function Sessions() {
           }}
         >
           {sessionsContent.headingStart}{" "}
-          <em className="italic">
+          <em className="italic text-sage-dark">
             {sessionsContent.headingAccent}
           </em>
           <br />
@@ -61,11 +61,10 @@ export default function Sessions() {
         </motion.h2>
       </div>
 
-      {/* Scrollable cards — outer div allows overflow-y: visible for hover lift */}
-      <div className="mt-12 overflow-y-visible lg:mt-16" style={{ paddingTop: 12, paddingBottom: 4 }}>
+      {/* Scrollable cards */}
       <div
         ref={scrollRef}
-        className="hide-scrollbar flex gap-5 overflow-x-auto px-[30px] lg:px-[68px]"
+        className="hide-scrollbar mt-12 flex gap-5 overflow-x-auto px-[30px] lg:mt-16 lg:px-[68px]"
         style={{ scrollSnapType: "x mandatory" }}
       >
         {sessionsContent.sessions.map((session, i) => (
@@ -75,11 +74,11 @@ export default function Sessions() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: 0.08 * i, ease: [0.25, 0.1, 0, 1] }}
-            whileHover={{ y: -8, transition: { duration: 0.25, ease: [0.4, 0, 0.2, 1] } }}
+            whileHover={{ boxShadow: "inset 0 0 0 2px rgba(255,255,255,0.25)", transition: { duration: 0.2 } }}
             className="flex-shrink-0 flex flex-col justify-between bg-sage p-10"
             style={{
-              width: "420px",
-              minHeight: 468,
+              width: "clamp(280px, 80vw, 420px)",
+              minHeight: "clamp(360px, 50vw, 468px)",
               borderRadius: 20,
               scrollSnapAlign: "start",
             }}
@@ -103,7 +102,6 @@ export default function Sessions() {
             </p>
           </motion.div>
         ))}
-      </div>
       </div>
 
       {/* Progress bar */}

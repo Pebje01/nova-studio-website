@@ -4,7 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-type Variant = "light" | "outline" | "sage";
+type Variant = "light" | "outline" | "sage" | "dark";
 
 interface ArrowButtonProps {
   children: React.ReactNode;
@@ -17,42 +17,55 @@ interface ArrowButtonProps {
   style?: React.CSSProperties;
 }
 
-const variantStyles: Record<Variant, string> = {
-  light: "bg-white text-brown-dark border border-transparent hover:bg-cream",
-  outline: "bg-transparent text-brown-dark border border-gray-border hover:bg-cream hover:border-cream",
-  sage: "bg-sage text-white border border-transparent hover:bg-sage-dark",
+const variantBase: Record<Variant, string> = {
+  light: "text-brown-dark border border-transparent",
+  outline: "text-brown-dark border border-gray-border",
+  sage: "text-white border border-transparent",
+  dark: "text-white border border-transparent",
 };
 
 function ButtonInner({ children, hovered }: { children: React.ReactNode; hovered: boolean }) {
   return (
-    <span className="flex items-center gap-2.5">
+    <span className="relative z-10 flex items-center gap-2.5">
       <span>{children}</span>
-      {/* Arrow clips vertically — exits top, enters from bottom */}
-      <span className="relative inline-flex h-[14px] w-[14px] overflow-hidden">
-        <motion.span
-          className="absolute inset-0 flex items-center justify-center text-[13px] leading-none"
-          animate={{ y: hovered ? -14 : 0, opacity: hovered ? 0 : 1 }}
-          transition={{ duration: 0.2, ease: [0.4, 0, 0.2, 1] }}
-        >
-          →
-        </motion.span>
-        <motion.span
-          className="absolute inset-0 flex items-center justify-center text-[13px] leading-none"
-          animate={{ y: hovered ? 0 : 14, opacity: hovered ? 1 : 0 }}
-          transition={{ duration: 0.2, ease: [0.4, 0, 0.2, 1] }}
-        >
-          →
-        </motion.span>
-      </span>
+      <motion.span
+        className="inline-flex text-[16px] leading-none"
+        animate={{ rotate: hovered ? -45 : 0 }}
+        transition={{ duration: 0.3, ease: [0.4, 0, 0.2, 1] }}
+      >
+        →
+      </motion.span>
     </span>
   );
 }
 
 const sharedStyle: React.CSSProperties = {
-  fontSize: 18,
-  borderRadius: 80,
+  fontSize: 14,
+  borderRadius: 50,
   fontWeight: 500,
-  padding: "26px 40px 22px",
+  padding: "12px 28px",
+  letterSpacing: "0.3px",
+};
+
+const variantHoverBg: Record<Variant, string> = {
+  light: "#a3b096",
+  outline: "#a3b096",
+  sage: "#ffffff",
+  dark: "#a3b096",
+};
+
+const variantDefaultBg: Record<Variant, string> = {
+  light: "#ffffff",
+  outline: "transparent",
+  sage: "#a3b096",
+  dark: "#221e20",
+};
+
+const variantHoverText: Record<Variant, string | undefined> = {
+  light: "#221e20",
+  outline: "#221e20",
+  sage: "#221e20",
+  dark: "#ffffff",
 };
 
 export default function ArrowButton({
@@ -67,7 +80,15 @@ export default function ArrowButton({
 }: ArrowButtonProps) {
   const mergedStyle = styleProp ? { ...sharedStyle, ...styleProp } : sharedStyle;
   const [hovered, setHovered] = useState(false);
-  const classes = `inline-flex items-center font-medium transition-colors duration-300 cursor-pointer ${variantStyles[variant]} ${fullWidth ? "w-full justify-center" : ""} ${className}`;
+  const baseClasses = `inline-flex items-center font-medium cursor-pointer transition-colors duration-300 ${variantBase[variant]} ${fullWidth ? "w-full justify-center" : ""} ${className}`;
+
+  const buttonStyle: React.CSSProperties = {
+    ...mergedStyle,
+    backgroundColor: hovered ? variantHoverBg[variant] : variantDefaultBg[variant],
+    color: hovered && variantHoverText[variant] ? variantHoverText[variant] : undefined,
+  };
+
+  const inner = <ButtonInner hovered={hovered}>{children}</ButtonInner>;
 
   if (href) {
     return (
@@ -80,8 +101,8 @@ export default function ArrowButton({
         className="inline-block"
         style={fullWidth ? { width: "100%" } : {}}
       >
-        <Link href={href} className={classes} style={mergedStyle}>
-          <ButtonInner hovered={hovered}>{children}</ButtonInner>
+        <Link href={href} className={baseClasses} style={buttonStyle}>
+          {inner}
         </Link>
       </motion.div>
     );
@@ -96,10 +117,10 @@ export default function ArrowButton({
       whileHover={{ y: -2 }}
       whileTap={{ y: 0 }}
       transition={{ duration: 0.2, ease: [0.4, 0, 0.2, 1] }}
-      className={classes}
-      style={mergedStyle}
+      className={baseClasses}
+      style={buttonStyle}
     >
-      <ButtonInner hovered={hovered}>{children}</ButtonInner>
+      {inner}
     </motion.button>
   );
 }

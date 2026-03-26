@@ -7,9 +7,9 @@ import ArrowButton from "@/components/ui/ArrowButton";
 
 export default function Contact() {
   return (
-    <section id="contact" className="bg-sage-dark py-[120px] lg:py-[160px]">
+    <section id="contact" className="bg-sage-dark py-[80px] lg:py-[160px]" style={{ borderRadius: "40px 40px 0 0" }}>
       <div className="mx-auto max-w-[1440px] px-[30px] lg:px-[68px]">
-        <div className="flex flex-col items-center gap-16 lg:flex-row">
+        <div className="flex flex-col items-center gap-10 lg:flex-row lg:gap-16">
           {/* Form */}
           <motion.div
             initial={{ opacity: 0, y: 10 }}
@@ -42,29 +42,29 @@ export default function Contact() {
                   type="text"
                   placeholder="Voornaam"
                   className="border border-white/20 bg-white/10 px-5 py-4 text-white placeholder-white/50 outline-none transition-colors focus:border-white/40"
-                  style={{ fontSize: 14, borderRadius: 16 }}
+                  style={{ fontSize: 16, borderRadius: 16 }}
                 />
                 <input
                   type="text"
                   placeholder="Achternaam"
                   className="border border-white/20 bg-white/10 px-5 py-4 text-white placeholder-white/50 outline-none transition-colors focus:border-white/40"
-                  style={{ fontSize: 14, borderRadius: 16 }}
+                  style={{ fontSize: 16, borderRadius: 16 }}
                 />
               </div>
               <input
                 type="email"
                 placeholder="E-mailadres"
                 className="border border-white/20 bg-white/10 px-5 py-4 text-white placeholder-white/50 outline-none transition-colors focus:border-white/40"
-                style={{ fontSize: 14, borderRadius: 16 }}
+                style={{ fontSize: 16, borderRadius: 16 }}
               />
               <textarea
                 placeholder="Jouw bericht of vraag"
                 rows={4}
                 className="resize-none border border-white/20 bg-white/10 px-5 py-4 text-white placeholder-white/50 outline-none transition-colors focus:border-white/40"
-                style={{ fontSize: 14, borderRadius: 16 }}
+                style={{ fontSize: 16, borderRadius: 16 }}
               />
               <div className="mt-2 md:self-start">
-                <ArrowButton type="submit" variant="sage" style={{ fontSize: 16, borderRadius: 80, fontWeight: 500, padding: "20px 36px 18px" }}>
+                <ArrowButton type="submit" variant="dark">
                   Verstuur bericht
                 </ArrowButton>
               </div>
@@ -77,17 +77,15 @@ export default function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.5, delay: 0.1, ease: [0.25, 0.1, 0, 1] }}
-            className="relative hidden lg:block"
-            style={{ width: 450, height: 450 }}
+            className="relative hidden lg:block overflow-hidden"
+            style={{ width: 400, height: 560, borderRadius: 200 }}
           >
             <motion.div
-              animate={{ y: [0, -10, 0] }}
-              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="h-full w-full overflow-hidden rounded-full"
+              className="relative h-full w-full"
             >
               <Image
                 src={contactContent.image}
-                alt="Yoga meditation"
+                alt="Nova Studio"
                 fill
                 className="object-cover"
               />

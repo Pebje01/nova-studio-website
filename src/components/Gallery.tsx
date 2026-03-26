@@ -33,7 +33,7 @@ export default function Gallery() {
           }}
         >
           {galleryContent.headingStart}{" "}
-          <em className="italic">{galleryContent.headingAccent}</em>{" "}
+          <em className="italic text-sage-dark">{galleryContent.headingAccent}</em>{" "}
           {galleryContent.headingEnd}
         </motion.h2>
       </div>
@@ -44,10 +44,10 @@ export default function Gallery() {
           className="relative mx-auto overflow-hidden"
           style={{
             maxWidth: 1400,
-            height: "clamp(300px, 45vw, 620px)",
-            borderRadius: 20,
-            marginLeft: 60,
-            marginRight: 60,
+            height: "clamp(220px, 45vw, 620px)",
+            borderRadius: 16,
+            marginLeft: "clamp(16px, 4vw, 60px)",
+            marginRight: "clamp(16px, 4vw, 60px)",
           }}
         >
           <AnimatePresence mode="wait">

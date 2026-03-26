@@ -31,7 +31,7 @@ export default function Hero() {
   const kb = kenBurnsVariants[current % kenBurnsVariants.length];
 
   return (
-    <section className="relative flex min-h-screen items-center overflow-hidden" style={{ paddingTop: "160px" }}>
+    <section className="relative flex min-h-screen items-center overflow-hidden" style={{ paddingTop: "92px" }}>
       {/* Slideshow background */}
       <AnimatePresence mode="sync">
         <motion.div
@@ -75,11 +75,11 @@ export default function Hero() {
                 letterSpacing: "-2.4px",
               }}
             >
-              {heroContent.headingStart}{" "}
-              <em className="italic">{heroContent.headingAccent}</em>
+              <span className="whitespace-nowrap">{heroContent.headingStart}{" "}
+              <em className="italic">{heroContent.headingAccent}</em></span>
               <br />
-              {heroContent.headingMiddle}{" "}
-              <em className="italic">{heroContent.headingAccent2}</em>{" "}
+              <span className="whitespace-nowrap">{heroContent.headingMiddle}{" "}
+              <em className="italic">{heroContent.headingAccent2}</em></span>{" "}
               {heroContent.headingEnd}
             </motion.h1>
 
@@ -99,7 +99,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.3, ease: [0.25, 0.1, 0, 1] }}
               className="mt-10"
             >
-              <ArrowButton href="#memberships" variant="light">
+              <ArrowButton href="#memberships" variant="sage">
                 {heroContent.ctaLabel}
               </ArrowButton>
             </motion.div>

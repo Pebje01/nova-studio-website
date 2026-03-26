@@ -21,7 +21,7 @@ export default function Memberships() {
           }}
         >
           {membershipsContent.headingStart}{" "}
-          <em className="italic">{membershipsContent.headingAccent}</em>{" "}
+          <em className="italic text-sage-dark">{membershipsContent.headingAccent}</em>{" "}
           {membershipsContent.headingEnd}
         </motion.h2>
 
@@ -50,12 +50,12 @@ export default function Memberships() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 * i, ease: [0.25, 0.1, 0, 1] }}
               whileHover={{ y: -6, boxShadow: "0 20px 40px rgba(0,0,0,0.08)", transition: { duration: 0.3 } }}
-              className={`flex flex-col justify-between p-8 lg:p-10 ${
+              className={`flex flex-col justify-between p-6 md:p-8 lg:p-10 ${
                 plan.featured
                   ? "bg-sage text-white"
                   : "bg-white text-brown-dark border border-gray-border"
               }`}
-              style={{ borderRadius: 20, minHeight: 520 }}
+              style={{ borderRadius: 20 }}
             >
               <div>
                 <span
@@ -72,7 +72,7 @@ export default function Memberships() {
                 <div className="mt-6">
                   <span
                     className="font-serif font-normal"
-                    style={{ fontSize: 52, lineHeight: "52px" }}
+                    style={{ fontSize: "clamp(36px, 7vw, 52px)", lineHeight: 1 }}
                   >
                     {plan.price}
                   </span>
@@ -113,9 +113,8 @@ export default function Memberships() {
                   href="#contact"
                   variant={plan.featured ? "light" : "outline"}
                   fullWidth
-                  style={{ fontSize: 14, borderRadius: 80, fontWeight: 500, padding: "16px 32px" }}
                 >
-                  Buy a subscription
+                  Abonnement kiezen
                 </ArrowButton>
               </div>
             </motion.div>

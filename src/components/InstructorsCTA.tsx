@@ -13,7 +13,7 @@ export default function InstructorsCTA() {
 
   return (
     <section ref={ref} className="bg-cream py-[60px] lg:py-[80px]">
-      <div className="mx-auto flex max-w-[1440px] flex-col items-center gap-16 px-[30px] lg:flex-row lg:px-[68px]">
+      <div className="mx-auto flex max-w-[1440px] flex-col items-center gap-8 px-[30px] lg:flex-row lg:gap-16 lg:px-[68px]">
         {/* Left text */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
@@ -32,7 +32,7 @@ export default function InstructorsCTA() {
             }}
           >
             {instructorsCTAContent.headingStart}{" "}
-            <em className="italic">{instructorsCTAContent.headingAccent}</em>
+            <em className="italic text-sage-dark">{instructorsCTAContent.headingAccent}</em>
           </h2>
           <p
             className="mt-6 max-w-[460px] text-brown-medium"
@@ -55,20 +55,18 @@ export default function InstructorsCTA() {
           transition={{ duration: 0.5, delay: 0.1, ease: [0.25, 0.1, 0, 1] }}
           style={{
             y: imageY,
-            width: "clamp(300px, 40vw, 540px)",
-            height: "clamp(400px, 55vw, 734px)",
+            width: "clamp(260px, 40vw, 540px)",
+            height: "clamp(320px, 55vw, 734px)",
             borderRadius: "500px",
           }}
-          className="relative"
+          className="relative overflow-hidden"
         >
-          <div className="h-full w-full overflow-hidden" style={{ borderRadius: "500px" }}>
-            <Image
-              src={instructorsCTAContent.image}
-              alt="Yoga instructor"
-              fill
-              className="object-cover"
-            />
-          </div>
+          <Image
+            src={instructorsCTAContent.image}
+            alt="Nova Studio trainer"
+            fill
+            className="object-cover"
+          />
         </motion.div>
       </div>
     </section>

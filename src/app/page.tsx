@@ -3,7 +3,6 @@ import Hero from "@/components/Hero";
 import Sessions from "@/components/Sessions";
 import InstructorsCTA from "@/components/InstructorsCTA";
 import FullWidthImage from "@/components/FullWidthImage";
-import Trainers from "@/components/Trainers";
 import Reviews from "@/components/Reviews";
 import Gallery from "@/components/Gallery";
 import Memberships from "@/components/Memberships";
@@ -20,7 +19,6 @@ export default function Home() {
         <Sessions />
         <InstructorsCTA />
         <FullWidthImage />
-        <Trainers />
         <Reviews />
         <Gallery />
         <Memberships />

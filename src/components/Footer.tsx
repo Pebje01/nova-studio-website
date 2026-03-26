@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { siteConfig, footerContent } from "@/lib/content";
 
 function LotusIcon() {
@@ -25,12 +26,16 @@ export default function Footer() {
   return (
     <footer className="bg-brown-dark py-[80px] lg:py-[100px]">
       <div className="mx-auto max-w-[1440px] px-[30px] lg:px-[68px]">
-        <div className="flex flex-col gap-12 lg:flex-row lg:justify-between">
+        <div className="flex flex-col gap-8 lg:flex-row lg:gap-12 lg:justify-between">
           {/* Logo + description */}
           <div className="max-w-[340px]">
-            <div className="flex h-[52px] w-[52px] items-center justify-center rounded-full bg-white/10 text-white">
-              <LotusIcon />
-            </div>
+            <Image
+              src="/logo-white.svg"
+              alt="Nova Studio"
+              width={120}
+              height={48}
+              style={{ height: 60, width: "auto" }}
+            />
             <p
               className="mt-6 text-white/60"
               style={{ fontSize: 14, lineHeight: "22px" }}
@@ -99,7 +104,15 @@ export default function Footer() {
             {footerContent.copyright}
           </p>
           <p className="text-white/40" style={{ fontSize: 13 }}>
-            Designed by {siteConfig.name}
+            Designed by{" "}
+            <a
+              href="https://wegrowbrands.online"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/60 transition-colors hover:text-white"
+            >
+              We Grow Brands
+            </a>
           </p>
         </div>
       </div>
