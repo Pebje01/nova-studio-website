@@ -2,8 +2,8 @@
 
 import { useRef } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
+import ArrowButton from "@/components/ui/ArrowButton";
 import { instructorsCTAContent } from "@/lib/content";
 
 export default function InstructorsCTA() {
@@ -40,13 +40,11 @@ export default function InstructorsCTA() {
           >
             {instructorsCTAContent.subtitle}
           </p>
-          <Link
-            href="#memberships"
-            className="mt-8 inline-flex items-center bg-sage font-medium text-white transition-all duration-300 hover:bg-sage-dark"
-            style={{ fontSize: 14, borderRadius: 50, fontWeight: 500, padding: "12px 28px", letterSpacing: "0.3px" }}
-          >
-            {instructorsCTAContent.ctaLabel}
-          </Link>
+          <div className="mt-8">
+            <ArrowButton href="#memberships" variant="sage">
+              {instructorsCTAContent.ctaLabel}
+            </ArrowButton>
+          </div>
         </motion.div>
 
         {/* Right circle image with parallax */}

@@ -1,8 +1,8 @@
 "use client";
 
-import Link from "next/link";
 import { motion } from "framer-motion";
 import { membershipsContent } from "@/lib/content";
+import ArrowButton from "@/components/ui/ArrowButton";
 
 export default function Memberships() {
   return (
@@ -108,17 +108,16 @@ export default function Memberships() {
                 </ul>
               </div>
 
-              <Link
-                href="#contact"
-                className={`mt-8 flex items-center justify-center font-medium transition-all duration-300 ${
-                  plan.featured
-                    ? "bg-white text-brown-dark hover:bg-cream"
-                    : "border border-gray-border bg-transparent text-brown-dark hover:bg-cream"
-                }`}
-                style={{ fontSize: 12, borderRadius: 50, fontWeight: 500, padding: "10px 24px", letterSpacing: "0.5px" }}
-              >
-                Buy a subscription
-              </Link>
+              <div className="mt-8">
+                <ArrowButton
+                  href="#contact"
+                  variant={plan.featured ? "light" : "outline"}
+                  fullWidth
+                  style={{ fontSize: 14, borderRadius: 80, fontWeight: 500, padding: "16px 32px" }}
+                >
+                  Buy a subscription
+                </ArrowButton>
+              </div>
             </motion.div>
           ))}
         </div>

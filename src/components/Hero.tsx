@@ -1,31 +1,68 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import { useEffect, useState } from "react";
 import { heroContent } from "@/lib/content";
+import ArrowButton from "@/components/ui/ArrowButton";
+
+const slideImages = [
+  { src: "/nova-hero-1.jpg", alt: "Nova Studio" },
+  { src: "/nova-hero-2.jpg", alt: "Nova Studio fitness" },
+  { src: "/nova-hero-3.jpg", alt: "Nova Studio sfeer" },
+];
+
+const kenBurnsVariants = [
+  { initial: { scale: 1.12, x: 20, y: 10 }, animate: { scale: 1, x: 0, y: 0 } },
+  { initial: { scale: 1, x: -20, y: -10 }, animate: { scale: 1.12, x: 0, y: 0 } },
+  { initial: { scale: 1.08, x: 0, y: 15 }, animate: { scale: 1, x: 0, y: -15 } },
+];
 
 export default function Hero() {
-  const { scrollY } = useScroll();
-  const bgY = useTransform(scrollY, [0, 500], [0, 150]);
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % slideImages.length);
+    }, 6000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const kb = kenBurnsVariants[current % kenBurnsVariants.length];
 
   return (
-    <section className="relative flex min-h-screen items-center overflow-hidden" style={{ paddingTop: "120px" }}>
-      {/* Background image with parallax */}
-      <motion.div className="absolute inset-0" style={{ y: bgY }}>
-        <Image
-          src={heroContent.heroImage}
-          alt="Yoga class"
-          fill
-          className="object-cover"
-          priority
-        />
-        <div className="absolute inset-0 bg-black/20" />
-      </motion.div>
+    <section className="relative flex min-h-screen items-center overflow-hidden" style={{ paddingTop: "160px" }}>
+      {/* Slideshow background */}
+      <AnimatePresence mode="sync">
+        <motion.div
+          key={current}
+          className="absolute inset-0"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 1.6, ease: "easeInOut" }}
+        >
+          <motion.div
+            className="absolute inset-0"
+            initial={kb.initial}
+            animate={kb.animate}
+            transition={{ duration: 7, ease: "easeInOut" }}
+          >
+            <Image
+              src={slideImages[current].src}
+              alt={slideImages[current].alt}
+              fill
+              className="object-cover"
+              priority={current === 0}
+            />
+          </motion.div>
+          <div className="absolute inset-0 bg-black/30" />
+        </motion.div>
+      </AnimatePresence>
 
       {/* Content */}
       <div className="relative z-10 mx-auto w-full max-w-[1440px] px-[30px] lg:px-[68px]">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center">
           <div className="max-w-[720px]">
             <motion.h1
               initial={{ opacity: 0, y: 40 }}
@@ -39,7 +76,8 @@ export default function Hero() {
               }}
             >
               {heroContent.headingStart}{" "}
-              <em className="italic">{heroContent.headingAccent}</em>{" "}
+              <em className="italic">{heroContent.headingAccent}</em>
+              <br />
               {heroContent.headingMiddle}{" "}
               <em className="italic">{heroContent.headingAccent2}</em>{" "}
               {heroContent.headingEnd}
@@ -49,7 +87,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.15, ease: [0.25, 0.1, 0, 1] }}
-              className="mt-6 max-w-[514px] font-sans text-white/80"
+              className="mt-10 max-w-[514px] font-sans text-white/80"
               style={{ fontSize: 18, lineHeight: "25.2px" }}
             >
               {heroContent.subtitle}
@@ -61,35 +99,25 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.3, ease: [0.25, 0.1, 0, 1] }}
               className="mt-10"
             >
-              <Link
-                href="#memberships"
-                className="inline-flex items-center bg-white font-medium text-brown-dark transition-all duration-300 hover:bg-cream"
-                style={{ fontSize: 14, borderRadius: 50, fontWeight: 500, padding: "12px 28px", letterSpacing: "0.3px" }}
-              >
+              <ArrowButton href="#memberships" variant="light">
                 {heroContent.ctaLabel}
-              </Link>
+              </ArrowButton>
             </motion.div>
           </div>
-
-          {/* Circle image on right with scale animation */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            whileInView={{ scale: [0.95, 1] }}
-            transition={{ duration: 0.6, delay: 0.15, ease: [0.25, 0.1, 0, 1] }}
-            className="relative hidden lg:block"
-            style={{ width: "clamp(260px, 24vw, 380px)", height: "clamp(360px, 32vw, 520px)", borderRadius: "160px" }}
-          >
-            <div className="h-full w-full overflow-hidden" style={{ borderRadius: "160px" }}>
-              <Image
-                src={heroContent.heroCircleImage}
-                alt="Yoga pose"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </motion.div>
         </div>
+      </div>
+
+      {/* Slide indicators */}
+      <div className="absolute bottom-8 left-1/2 z-10 flex -translate-x-1/2 gap-2">
+        {slideImages.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => setCurrent(i)}
+            className="h-1.5 rounded-full bg-white transition-all duration-500"
+            style={{ width: i === current ? 32 : 8, opacity: i === current ? 1 : 0.4 }}
+            aria-label={`Slide ${i + 1}`}
+          />
+        ))}
       </div>
     </section>
   );

@@ -21,17 +21,17 @@ export default function Navbar() {
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.3 }}
-      className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-[16px] lg:px-[68px]"
-      style={{ height: 64 }}
+      className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between pl-[10px] pr-[16px] lg:pl-[54px] lg:pr-[68px]"
+      style={{ height: 72 }}
     >
       {/* Background pill — slim */}
       <div
-        className={`absolute inset-x-[48px] lg:inset-x-[52px] top-[10px] transition-all duration-300 ${
+        className={`absolute inset-x-[48px] lg:inset-x-[52px] top-[8px] h-[56px] transition-all duration-300 ${
           scrolled
             ? "bg-white/90 shadow-sm backdrop-blur-md"
             : "bg-white/20 backdrop-blur-sm"
         }`}
-        style={{ height: 44, borderRadius: 100 }}
+        style={{ borderRadius: 100 }}
       />
 
       {/* Logo */}
@@ -45,7 +45,7 @@ export default function Navbar() {
           width={120}
           height={48}
           className="transition-opacity duration-300"
-          style={{ height: 40, width: "auto" }}
+          style={{ height: 110, width: "auto" }}
           priority
         />
       </Link>
@@ -75,12 +75,12 @@ export default function Navbar() {
           }`}
           style={{
             fontSize: 12,
-            padding: "8px 22px",
+            padding: "10px 24px",
             borderRadius: 50,
             letterSpacing: "0.3px",
           }}
         >
-          Contact
+          Boek een proefles
         </Link>
       </div>
 
@@ -122,7 +122,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2 }}
-            className="absolute top-[60px] left-4 right-4 z-50 rounded-2xl bg-white p-5 shadow-xl lg:hidden"
+            className="absolute top-[76px] left-4 right-4 z-50 rounded-2xl bg-white p-5 shadow-xl lg:hidden"
           >
             <div className="flex flex-col gap-3">
               {navLinks.map((link) => (
@@ -141,7 +141,7 @@ export default function Navbar() {
                 className="mt-2 bg-brown-dark px-5 py-2 text-center text-xs font-medium text-white"
                 style={{ borderRadius: 50 }}
               >
-                Contact
+                Boek een proefles
               </Link>
             </div>
           </motion.div>

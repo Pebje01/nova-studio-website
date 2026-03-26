@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { contactContent } from "@/lib/content";
+import ArrowButton from "@/components/ui/ArrowButton";
 
 export default function Contact() {
   return (
@@ -39,36 +40,34 @@ export default function Contact() {
               <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
                 <input
                   type="text"
-                  placeholder="First name"
+                  placeholder="Voornaam"
                   className="border border-white/20 bg-white/10 px-5 py-4 text-white placeholder-white/50 outline-none transition-colors focus:border-white/40"
                   style={{ fontSize: 14, borderRadius: 16 }}
                 />
                 <input
                   type="text"
-                  placeholder="Last name"
+                  placeholder="Achternaam"
                   className="border border-white/20 bg-white/10 px-5 py-4 text-white placeholder-white/50 outline-none transition-colors focus:border-white/40"
                   style={{ fontSize: 14, borderRadius: 16 }}
                 />
               </div>
               <input
                 type="email"
-                placeholder="Email"
+                placeholder="E-mailadres"
                 className="border border-white/20 bg-white/10 px-5 py-4 text-white placeholder-white/50 outline-none transition-colors focus:border-white/40"
                 style={{ fontSize: 14, borderRadius: 16 }}
               />
               <textarea
-                placeholder="Your message"
+                placeholder="Jouw bericht of vraag"
                 rows={4}
                 className="resize-none border border-white/20 bg-white/10 px-5 py-4 text-white placeholder-white/50 outline-none transition-colors focus:border-white/40"
                 style={{ fontSize: 14, borderRadius: 16 }}
               />
-              <button
-                type="submit"
-                className="mt-2 w-full bg-sage font-medium text-white transition-all duration-300 hover:bg-sage/80 md:w-auto md:self-start"
-                style={{ fontSize: 13, borderRadius: 50, fontWeight: 500, padding: "12px 28px", letterSpacing: "0.3px" }}
-              >
-                Send message
-              </button>
+              <div className="mt-2 md:self-start">
+                <ArrowButton type="submit" variant="sage" style={{ fontSize: 16, borderRadius: 80, fontWeight: 500, padding: "20px 36px 18px" }}>
+                  Verstuur bericht
+                </ArrowButton>
+              </div>
             </form>
           </motion.div>
 

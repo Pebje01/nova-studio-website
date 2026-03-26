@@ -1,149 +1,139 @@
 export const siteConfig = {
   name: "Nova Studio",
-  tagline: "Yoga & Wellness",
+  tagline: "Fitness & Hormooncoaching",
 };
 
 export const navLinks = [
-  { label: "Trainers", href: "#trainers" },
-  { label: "Reviews", href: "#reviews" },
-  { label: "Memberships", href: "#memberships" },
-  { label: "Classes", href: "#classes" },
+  { label: "Over NOVA Studio", href: "#about" },
+  { label: "Services", href: "#services" },
+  { label: "Contact", href: "#contact" },
 ];
 
 export const heroContent = {
-  headingStart: "Discover",
-  headingAccent: "balance",
-  headingMiddle: "and",
-  headingAccent2: "inner harmony",
-  headingEnd: "at our yoga studio",
+  headingStart: "De leukste",
+  headingAccent: "personal training",
+  headingMiddle: "in",
+  headingAccent2: "Purmerend",
+  headingEnd: "",
   subtitle:
-    "We believe in the transformative power of yoga to nurture not just the body, but also the mind and soul.",
-  ctaLabel: "Buy a subscription",
-  heroImage:
-    "https://cdn.prod.website-files.com/65c50e40afae39c0bdf7ae15/65c50e40afae39c0bdf7ae8f_hero-bg%402x.webp",
-  heroCircleImage:
-    "https://cdn.prod.website-files.com/65c50e40afae39c0bdf7ae15/65c50e40afae39c0bdf7ae82_Property%201%3D2%402x.webp",
+    "Bij Nova Studio train je in een kleinschalige, high-end studio aan huis. Persoonlijke begeleiding op basis van hormonen, anatomie en sportwetenschap — voor mannen én vrouwen.",
+  ctaLabel: "Vraag proefles aan",
+  heroImage: "/nova-hero-1.jpg",
+  heroCircleImage: "/nova-shirley-24.jpg",
 };
 
 export const sessionsContent = {
-  headingStart: "Yoga sessions this",
-  headingAccent: "find balance",
-  headingEnd: "and inner peace",
+  headingStart: "Wat we doen bij",
+  headingAccent: "Nova Studio",
+  headingEnd: "",
   sessions: [
     {
       id: 1,
-      title: "Vinyasa Flow",
+      title: "Personal Training",
       description:
-        "Vinyasa Flow is a dynamic and fluid style of yoga that synchronizes breath with movement. The classes involve a sequence of poses that transition smoothly, promoting strength, flexibility, and mindfulness.",
+        "Geen standaard schema's. Jouw training is gebaseerd op jouw doelen, anatomie en hormonen. Één op één, volledig op maat — en met genoeg lol om het nooit als een straf te voelen.",
     },
     {
       id: 2,
-      title: "Hatha Yoga",
+      title: "Mammy Fitness",
       description:
-        "Hatha Yoga focuses on the fundamental postures and breathing techniques. It's a great starting point for beginners and emphasizes balance, flexibility, and relaxation.",
+        "Je bent net mama geworden — het mooiste, maar ook zwaarste avontuur. De Mammy Fitness lessen bouwen veilig op, houden rekening met je herstel én zorgen voor een goed humeur. Je lacht minstens één keer per les, gegarandeerd.",
     },
     {
       id: 3,
-      title: "Kundalini Yoga",
+      title: "Zwangere Vrouwen Fitness",
       description:
-        "Kundalini Yoga aims to awaken the spiritual energy within the body through a combination of breathwork, meditation, and dynamic postures. This practice focuses on expanding consciousness and achieving a deeper sense of self-awareness.",
+        "Fit blijven tijdens je zwangerschap doet wonderen — voor je lijf én je hoofd. De lessen zijn afgestemd op jouw fase, veilig én uitdagend. Want sterk zijn mag, ook met een ronde buik.",
     },
     {
       id: 4,
-      title: "Yin Yoga",
+      title: "Hormooncoaching",
       description:
-        "Yin Yoga is a slow-paced style that targets connective tissues and joints. Poses are held for longer durations, promoting deep relaxation and increased flexibility. It's a wonderful way to release tension and cultivate mindfulness.",
+        "Mannen en vrouwen trainen hormonaal gezien totaal anders. Met hormooncoaching krijg je inzicht in wat er in jouw lichaam speelt, zodat je werkt mét je hormonen — en eindelijk voelt hoe het hoort.",
     },
   ],
 };
 
 export const instructorsCTAContent = {
-  headingStart: "Meet our",
-  headingAccent: "instructors",
+  headingStart: "Maak kennis met",
+  headingAccent: "Shirley",
   subtitle:
-    "Each instructor is certified in their respective yoga discipline and is dedicated to guiding you on your journey with personalized attention.",
-  ctaLabel: "Buy a subscription",
-  image:
-    "https://cdn.prod.website-files.com/65c50e40afae39c0bdf7ae15/65c50e40afae39c0bdf7ae83_Property%201%3D3%402x.webp",
+    "Hoi, ik ben Shirley! Ik combineer mijn kennis van hormonen, anatomie en sportwetenschap met een flinke dosis energie en humor. Bij mij train je niet alleen je lichaam, maar ga je ook met een goed gevoel naar huis. Lachen mag — en resultaat is gegarandeerd.",
+  ctaLabel: "Boek een proefles",
+  image: "/nova-shirley-24.jpg",
 };
 
 export const trainersContent = {
-  headingStart: "Meet our yoga",
-  headingAccent: "instructors",
-  headingEnd: ". Guiding you to wellness",
+  headingStart: "Het team achter",
+  headingAccent: "Nova Studio",
+  headingEnd: ". Jouw gezondheid, onze passie",
   trainers: [
     {
-      name: "Javier Morales",
-      experience: "8 years",
-      image:
-        "https://cdn.prod.website-files.com/65c50e40afae39c0bdf7ae15/65c50e40afae39c0bdf7ae85_Property%201%3DVariant5%402x.webp",
+      name: "Shirley",
+      experience: "8 jaar",
+      image: "/nova-shirley-1.jpg",
     },
     {
-      name: "Raj Gupta",
-      experience: "5 years",
-      image:
-        "https://cdn.prod.website-files.com/65c50e40afae39c0bdf7ae15/65c50e40afae39c0bdf7ae84_Property%201%3DVariant4%402x.webp",
+      name: "Lisa de Vries",
+      experience: "5 jaar",
+      image: "/nova-shirley-4.jpg",
     },
     {
-      name: "Mia Thompson",
-      experience: "3 years",
-      image:
-        "https://cdn.prod.website-files.com/65c50e40afae39c0bdf7ae15/65c50e40afae39c0bdf7ae81_Property%201%3D4%402x.webp",
+      name: "Nadia Osman",
+      experience: "3 jaar",
+      image: "/nova-shirley-7.jpg",
     },
     {
-      name: "Ava Garcia",
-      experience: "6 years",
-      image:
-        "https://cdn.prod.website-files.com/65c50e40afae39c0bdf7ae15/65c50e40afae39c0bdf7ae82_Property%201%3D2%402x.webp",
+      name: "Femke Jansen",
+      experience: "6 jaar",
+      image: "/nova-shirley-10.jpg",
     },
     {
-      name: "Elena Rodriguez",
-      experience: "4 years",
-      image:
-        "https://cdn.prod.website-files.com/65c50e40afae39c0bdf7ae15/65c50e40afae39c0bdf7ae83_Property%201%3D3%402x.webp",
+      name: "Roos van Dam",
+      experience: "4 jaar",
+      image: "/nova-shirley-18.jpg",
     },
   ],
 };
 
 export const reviewsContent = {
-  headingStart: "Celebrating yoga",
-  headingAccent: "success",
-  headingMiddle: ". Hear what",
-  headingAccent2: "our",
-  headingEnd: "clients have to say",
+  headingStart: "Wat onze",
+  headingAccent: "leden",
+  headingMiddle: "zeggen —",
+  headingAccent2: "echte",
+  headingEnd: "resultaten, echte verhalen",
   reviews: [
     {
       id: 1,
-      title: "A place of harmony and positive emotions!",
-      text: "This yoga studio is a hidden gem! The variety of classes suits all levels, and the peaceful ambiance instantly puts you in a zen state of mind. The instructors are fantastic at what they do and always help find the right level of challenge.",
-      name: "John Smith",
-      age: 26,
+      title: "Eindelijk begrijp ik mijn eigen lichaam!",
+      text: "Dankzij de hormooncoaching van Shirley snap ik nu waarom ik me al jaren zo moe voelde. Na twee maanden voel ik me zoveel beter — meer energie, betere slaap en ik ben weer trots op mezelf. En ik heb gelachen ook.",
+      name: "Marieke B.",
+      age: 34,
       hasImage: false,
     },
     {
       id: 2,
-      title: "This yoga studio is a hidden gem!",
-      text: "This yoga studio is a hidden gem! The variety of classes suits all levels, and the peaceful ambiance instantly puts you in a zen state of mind. The instructors are fantastic at what they do and always help find the right level of challenge.",
-      name: "Daniel Wilson",
-      age: 31,
+      title: "Na mijn bevalling voelde ik me mens dankzij Shirley.",
+      text: "De Mammy Fitness lessen gaven me niet alleen mijn kracht terug, maar ook mijn zelfvertrouwen. Shirley begeleidt je met kennis, geduld én humor. Ik keek elke keer uit naar mijn les — dat zegt genoeg.",
+      name: "Yasmine K.",
+      age: 29,
       hasImage: false,
     },
     {
       id: 3,
       title: "",
       text: "",
-      name: "James Anderson",
-      age: 24,
+      name: "Sophie M.",
+      age: 26,
       hasImage: true,
-      image:
-        "https://cdn.prod.website-files.com/65c50e40afae39c0bdf7ae15/65c50e40afae39c0bdf7ae81_Property%201%3D4%402x.webp",
+      image: "/nova-shirley-13.jpg",
     },
     {
       id: 4,
-      title: "The yoga studio offers a perfect blend.",
-      text: "The yoga studio offers a perfect blend of traditional and modern yoga practices. The serene setting and expert guidance make it an ideal place to escape the daily hustle and find inner balance.",
-      name: "Emma Taylor",
-      age: 22,
+      title: "Sporten tijdens mijn zwangerschap — beste beslissing ooit.",
+      text: "Ik was bang om te sporten tijdens mijn zwangerschap, maar bij Nova Studio voelde ik me meteen op mijn gemak. Shirley weet precies wat veilig is én zorgt dat het nooit saai wordt. Ik heb me de hele zwangerschap sterk gevoeld.",
+      name: "Fatima A.",
+      age: 31,
       hasImage: false,
     },
     {
@@ -154,215 +144,205 @@ export const reviewsContent = {
       age: 0,
       hasImage: true,
       isVideo: true,
-      image:
-        "https://cdn.prod.website-files.com/65c50e40afae39c0bdf7ae15/65c50e40afae39c0bdf7ae85_Property%201%3DVariant5%402x.webp",
+      image: "/nova-shirley-14.jpg",
     },
     {
       id: 6,
       title: "",
       text: "",
-      name: "Olivia Martinez",
-      age: 27,
+      name: "Chantal V.",
+      age: 38,
       hasImage: true,
-      image:
-        "https://cdn.prod.website-files.com/65c50e40afae39c0bdf7ae15/65c50e40afae39c0bdf7ae84_Property%201%3DVariant4%402x.webp",
+      image: "/nova-shirley-20.jpg",
     },
     {
       id: 7,
-      title: "I've been practicing yoga here for years",
-      text: "I've been practicing yoga here for years, and I'm continuously amazed by the positive impact it has on my physical and mental well-being. The community here is supportive and inspiring.",
-      name: "William Davis",
-      age: 19,
+      title: "Als man bij Nova Studio — absoluut de moeite waard.",
+      text: "Ik was sceptisch, maar Shirley weet precies hoe mannelijke hormonen een rol spelen in training en herstel. Mijn programma is volledig op maat en de resultaten zijn beter dan bij elke andere trainer hiervoor. Aanrader.",
+      name: "Thomas D.",
+      age: 38,
       hasImage: false,
     },
     {
       id: 8,
-      title: "A transformative experience",
-      text: "Attending classes at this yoga studio has truly transformed my life. I cannot express how grateful I am for this yoga studio. The instructors' dedication to their craft is evident in every class, and the sense of harmony and mindfulness they cultivate is truly exceptional.",
-      name: "Benjamin Walker",
-      age: 34,
+      title: "Klein studio, groot resultaat.",
+      text: "De kleinschaligheid is precies wat het zo bijzonder maakt. Je bent geen nummer, maar een mens. Shirley kent jou, jouw lichaam en jouw doelen. En ja — je lacht ook nog.",
+      name: "Denise W.",
+      age: 36,
       hasImage: false,
     },
   ],
 };
 
 export const galleryContent = {
-  headingStart: "A visual",
-  headingAccent: "journey",
-  headingEnd: "of mind and body harmony",
+  headingStart: "Een kijkje in",
+  headingAccent: "Nova Studio",
+  headingEnd: "— high-end, kleinschalig, persoonlijk",
   images: [
-    "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1400&h=800&fit=crop",
-    "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1400&h=800&fit=crop",
-    "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=1400&h=800&fit=crop",
+    "/nova-shirley-16.jpg",
+    "/nova-shirley-22.jpg",
+    "/nova-shirley-23.jpg",
   ],
 };
 
 export const membershipsContent = {
-  headingStart: "Pricing",
-  headingAccent: "plans",
-  headingEnd: "for your yoga",
+  headingStart: "Kies het",
+  headingAccent: "abonnement",
+  headingEnd: "dat bij jou past",
   subtitle:
-    "Each instructor is certified in their respective yoga discipline and is dedicated to guiding you on your journey with personalized attention. Whether you're a beginner",
+    "Geen grote groepen, geen standaard aanpak. Nova Studio is kleinschalig en persoonlijk — zodat jij de aandacht krijgt die je verdient.",
   plans: [
     {
       id: 1,
-      name: "Basic membership",
-      price: "$125",
-      period: "/month",
+      name: "Groepslessen",
+      price: "€79",
+      period: "/maand",
       featured: false,
       features: [
-        "Unlimited access to yoga classes for one month",
-        "Participation in group classes of various yoga styles",
-        "Access to equipment and recreational areas at the studio",
+        "Toegang tot Mammy Fitness en Zwangere Vrouwen Fitness",
+        "Kleine groepen, veel persoonlijke aandacht",
+        "Gebruik van de studio en materialen",
       ],
     },
     {
       id: 2,
-      name: "Vip membership",
-      price: "$150",
-      period: "/month",
+      name: "Alles-in-één",
+      price: "€129",
+      period: "/maand",
       featured: true,
       features: [
-        'All the benefits of the "Basic Membership"',
-        "Personalized individual sessions with an experienced instructor",
-        "Priority booking for high-demand classes",
+        "Alle groepslessen inbegrepen",
+        "Maandelijkse hormooncoaching sessie",
+        "Volledig holistisch traject — lijf én hoofd",
       ],
     },
     {
       id: 3,
-      name: "Online membership",
-      price: "$225",
-      period: "/month",
+      name: "Personal Training",
+      price: "€175",
+      period: "/maand",
       featured: false,
       features: [
-        "Access to an online platform for yoga classes from anywhere in the world",
-        "Daily live streams with professional instructors",
-        "The ability to view recordings of previous classes at your convenience",
+        "4 één-op-één sessies per maand bij Shirley thuis",
+        "Trainingsprogramma op maat — hormonen, anatomie, doelen",
+        "Voeding- en leefstijladvies inbegrepen",
       ],
     },
   ],
 };
 
 export const classesContent = {
-  headingStart: "Timetable of",
-  headingAccent: "classes",
+  headingStart: "Rooster van",
+  headingAccent: "lessen",
   subtitle:
-    "Each instructor is certified in their respective yoga discipline and is dedicated to guiding you on your journey with personalized attention. Whether you're a beginner",
+    "Bekijk wanneer jouw favoriete les is ingepland. Reserveer eenvoudig je plek en kom bewegen bij Nova Studio.",
   days: [
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-    "Sunday",
+    "Maandag",
+    "Dinsdag",
+    "Woensdag",
+    "Donderdag",
+    "Vrijdag",
+    "Zaterdag",
+    "Zondag",
   ],
   schedule: {
-    Monday: [
+    Maandag: [
       {
         time: "9.00 – 10.00",
-        className: "Hatha Yoga",
-        trainer: "Javier Morales",
+        className: "Mammy Fitness",
+        trainer: "Shirley",
         trainerImage:
-          "https://cdn.prod.website-files.com/65c50e40afae39c0bdf7ae15/65c50e40afae39c0bdf7ae85_Property%201%3DVariant5%402x.webp",
+          "/nova-shirley-1.jpg",
       },
       {
         time: "11.00 – 12.00",
-        className: "Vinyasa Flow",
-        trainer: "Raj Gupta",
+        className: "Hormooncoaching (groep)",
+        trainer: "Shirley",
         trainerImage:
-          "https://cdn.prod.website-files.com/65c50e40afae39c0bdf7ae15/65c50e40afae39c0bdf7ae84_Property%201%3DVariant4%402x.webp",
+          "/nova-shirley-1.jpg",
       },
       {
-        time: "15.00 – 16.00",
-        className: "Power Yoga",
-        trainer: "Ava Garcia",
+        time: "17.00 – 18.00",
+        className: "Personal Training",
+        trainer: "Lisa de Vries",
         trainerImage:
-          "https://cdn.prod.website-files.com/65c50e40afae39c0bdf7ae15/65c50e40afae39c0bdf7ae82_Property%201%3D2%402x.webp",
+          "/nova-shirley-4.jpg",
       },
     ],
-    Tuesday: [
+    Dinsdag: [
       {
         time: "10.00 – 11.00",
-        className: "Yin Yoga",
-        trainer: "Mia Thompson",
+        className: "Zwangere Vrouwen Fitness",
+        trainer: "Shirley",
         trainerImage:
-          "https://cdn.prod.website-files.com/65c50e40afae39c0bdf7ae15/65c50e40afae39c0bdf7ae81_Property%201%3D4%402x.webp",
+          "/nova-shirley-1.jpg",
       },
       {
-        time: "13.00 – 14.00",
-        className: "Kundalini Yoga",
-        trainer: "Elena Rodriguez",
+        time: "19.00 – 20.00",
+        className: "Mammy Fitness",
+        trainer: "Nadia Osman",
         trainerImage:
-          "https://cdn.prod.website-files.com/65c50e40afae39c0bdf7ae15/65c50e40afae39c0bdf7ae83_Property%201%3D3%402x.webp",
+          "/nova-shirley-7.jpg",
       },
     ],
-    Wednesday: [
+    Woensdag: [
       {
         time: "9.00 – 10.00",
-        className: "Hatha Yoga",
-        trainer: "Javier Morales",
+        className: "Personal Training",
+        trainer: "Shirley",
         trainerImage:
-          "https://cdn.prod.website-files.com/65c50e40afae39c0bdf7ae15/65c50e40afae39c0bdf7ae85_Property%201%3DVariant5%402x.webp",
-      },
-      {
-        time: "14.00 – 15.00",
-        className: "Vinyasa Flow",
-        trainer: "Raj Gupta",
-        trainerImage:
-          "https://cdn.prod.website-files.com/65c50e40afae39c0bdf7ae15/65c50e40afae39c0bdf7ae84_Property%201%3DVariant4%402x.webp",
-      },
-    ],
-    Thursday: [
-      {
-        time: "10.00 – 11.00",
-        className: "Power Yoga",
-        trainer: "Ava Garcia",
-        trainerImage:
-          "https://cdn.prod.website-files.com/65c50e40afae39c0bdf7ae15/65c50e40afae39c0bdf7ae82_Property%201%3D2%402x.webp",
-      },
-      {
-        time: "16.00 – 17.00",
-        className: "Yin Yoga",
-        trainer: "Mia Thompson",
-        trainerImage:
-          "https://cdn.prod.website-files.com/65c50e40afae39c0bdf7ae15/65c50e40afae39c0bdf7ae81_Property%201%3D4%402x.webp",
-      },
-    ],
-    Friday: [
-      {
-        time: "9.00 – 10.00",
-        className: "Kundalini Yoga",
-        trainer: "Elena Rodriguez",
-        trainerImage:
-          "https://cdn.prod.website-files.com/65c50e40afae39c0bdf7ae15/65c50e40afae39c0bdf7ae83_Property%201%3D3%402x.webp",
+          "/nova-shirley-1.jpg",
       },
       {
         time: "11.00 – 12.00",
-        className: "Hatha Yoga",
-        trainer: "Javier Morales",
+        className: "Zwangere Vrouwen Fitness",
+        trainer: "Femke Jansen",
         trainerImage:
-          "https://cdn.prod.website-files.com/65c50e40afae39c0bdf7ae15/65c50e40afae39c0bdf7ae85_Property%201%3DVariant5%402x.webp",
+          "/nova-shirley-10.jpg",
       },
     ],
-    Saturday: [
+    Donderdag: [
+      {
+        time: "10.00 – 11.00",
+        className: "Mammy Fitness",
+        trainer: "Shirley",
+        trainerImage:
+          "/nova-shirley-1.jpg",
+      },
+      {
+        time: "18.00 – 19.00",
+        className: "Hormooncoaching (groep)",
+        trainer: "Roos van Dam",
+        trainerImage:
+          "/nova-shirley-18.jpg",
+      },
+    ],
+    Vrijdag: [
+      {
+        time: "9.00 – 10.00",
+        className: "Zwangere Vrouwen Fitness",
+        trainer: "Shirley",
+        trainerImage:
+          "/nova-shirley-1.jpg",
+      },
+      {
+        time: "11.00 – 12.00",
+        className: "Personal Training",
+        trainer: "Lisa de Vries",
+        trainerImage:
+          "/nova-shirley-4.jpg",
+      },
+    ],
+    Zaterdag: [
       {
         time: "10.00 – 11.30",
-        className: "Vinyasa Flow",
-        trainer: "Raj Gupta",
+        className: "Mammy Fitness",
+        trainer: "Shirley",
         trainerImage:
-          "https://cdn.prod.website-files.com/65c50e40afae39c0bdf7ae15/65c50e40afae39c0bdf7ae84_Property%201%3DVariant4%402x.webp",
+          "/nova-shirley-1.jpg",
       },
     ],
-    Sunday: [
-      {
-        time: "10.00 – 11.00",
-        className: "Yin Yoga",
-        trainer: "Mia Thompson",
-        trainerImage:
-          "https://cdn.prod.website-files.com/65c50e40afae39c0bdf7ae15/65c50e40afae39c0bdf7ae81_Property%201%3D4%402x.webp",
-      },
-    ],
+    Zondag: [],
   } as Record<
     string,
     {
@@ -375,22 +355,21 @@ export const classesContent = {
 };
 
 export const contactContent = {
-  headingStart: "Get in touch with",
-  headingAccent: "Nova Studio",
+  headingStart: "Klaar om te starten bij",
+  headingAccent: "Nova Studio?",
   subtitle:
-    "Have questions or ready to start your yoga journey? Reach out to us!",
-  image:
-    "https://cdn.prod.website-files.com/65c50e40afae39c0bdf7ae15/65c50e40afae39c0bdf7ae82_Property%201%3D2%402x.webp",
+    "Interesse in een proefles of wil je meer weten over hormooncoaching of zwangerschapsfitness? Stel gerust al je vragen, ik sta voor je klaar!",
+  image: "/nova-shirley-22.jpg",
 };
 
 export const footerContent = {
   description:
-    "Nova Studio is your space for yoga, mindfulness, and inner peace. Join our community and transform your well-being.",
+    "Nova Studio is een kleinschalige, high-end studio aan huis. Persoonlijke begeleiding voor mannen en vrouwen — op basis van hormonen, anatomie en een gezonde dosis humor.",
   menuLinks: [
-    { label: "Classes", href: "#classes" },
+    { label: "Lessen", href: "#classes" },
     { label: "Trainers", href: "#trainers" },
     { label: "Reviews", href: "#reviews" },
-    { label: "Memberships", href: "#memberships" },
+    { label: "Abonnementen", href: "#memberships" },
   ],
   copyright: `\u00A9 Copyright ${new Date().getFullYear()} Nova Studio`,
 };
