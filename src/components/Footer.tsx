@@ -34,7 +34,7 @@ export default function Footer() {
               alt="Nova Studio"
               width={120}
               height={48}
-              style={{ height: 60, width: "auto" }}
+              style={{ height: 100, width: "auto" }}
             />
             <p
               className="mt-6 text-white/60"

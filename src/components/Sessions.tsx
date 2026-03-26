@@ -75,27 +75,28 @@ export default function Sessions() {
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: 0.08 * i, ease: [0.25, 0.1, 0, 1] }}
             whileHover={{ boxShadow: "inset 0 0 0 2px rgba(255,255,255,0.25)", transition: { duration: 0.2 } }}
-            className="flex-shrink-0 flex flex-col justify-between bg-sage p-10"
+            className="flex-shrink-0 flex flex-col justify-between p-10"
             style={{
               width: "clamp(280px, 80vw, 420px)",
               minHeight: "clamp(360px, 50vw, 468px)",
               borderRadius: 20,
               scrollSnapAlign: "start",
+              backgroundColor: ["#ebe6df", "#e4ded6", "#ddd6cc"][i] || "#ddd6cc",
             }}
           >
             <div>
-              <div className="mb-6 flex h-[48px] w-[48px] items-center justify-center rounded-xl bg-white/30 text-white">
+              <div className="mb-6 flex h-[48px] w-[48px] items-center justify-center rounded-xl bg-brown-dark/10 text-brown-dark">
                 <LotusIconSmall />
               </div>
               <h3
-                className="font-serif font-normal text-white"
+                className="font-serif font-normal text-brown-dark"
                 style={{ fontSize: 32, lineHeight: "34px" }}
               >
                 {session.title}
               </h3>
             </div>
             <p
-              className="mt-auto text-white/80"
+              className="mt-auto text-brown-medium"
               style={{ fontSize: 14, lineHeight: "22px" }}
             >
               {session.description}

@@ -48,7 +48,7 @@ export default function Classes() {
               className={`relative rounded-full px-7 py-3 text-sm font-medium transition-all duration-300 ${
                 activeDay === day
                   ? "bg-sage-dark text-white"
-                  : "border border-gray-border bg-transparent text-brown-dark hover:bg-cream"
+                  : "border border-beige-dark bg-transparent text-brown-dark hover:bg-beige-dark"
               }`}
               style={{ fontSize: 14, height: 48 }}
             >

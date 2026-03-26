@@ -2,7 +2,6 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Sessions from "@/components/Sessions";
 import InstructorsCTA from "@/components/InstructorsCTA";
-import FullWidthImage from "@/components/FullWidthImage";
 import Reviews from "@/components/Reviews";
 import Gallery from "@/components/Gallery";
 import Memberships from "@/components/Memberships";
@@ -18,7 +17,6 @@ export default function Home() {
         <Hero />
         <Sessions />
         <InstructorsCTA />
-        <FullWidthImage />
         <Reviews />
         <Gallery />
         <Memberships />

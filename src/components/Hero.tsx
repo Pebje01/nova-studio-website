@@ -99,7 +99,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.3, ease: [0.25, 0.1, 0, 1] }}
               className="mt-10"
             >
-              <ArrowButton href="#memberships" variant="sage">
+              <ArrowButton href="#memberships" variant="hero">
                 {heroContent.ctaLabel}
               </ArrowButton>
             </motion.div>

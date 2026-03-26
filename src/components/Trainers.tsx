@@ -34,7 +34,7 @@ export default function Trainers() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 * i, ease: [0.25, 0.1, 0, 1] }}
-              whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
+              whileHover={{ scale: 1.03, transition: { duration: 0.3 } }}
               className="flex flex-col items-center"
             >
               <div

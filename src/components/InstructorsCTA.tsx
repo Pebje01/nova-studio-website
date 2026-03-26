@@ -12,19 +12,18 @@ export default function InstructorsCTA() {
   const imageY = useTransform(scrollYProgress, [0, 1], [40, -40]);
 
   return (
-    <section ref={ref} className="bg-cream py-[60px] lg:py-[80px]">
-      <div className="mx-auto flex max-w-[1440px] flex-col items-center gap-8 px-[30px] lg:flex-row lg:gap-16 lg:px-[68px]">
+    <section ref={ref} className="bg-brown-dark py-[100px] lg:py-[140px]">
+      <div className="mx-auto flex max-w-[1440px] flex-col items-center gap-12 px-[30px] lg:flex-row lg:gap-20 lg:px-[68px]">
         {/* Left text */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.3 }}
-          className="flex flex-col items-center text-center lg:items-start lg:text-left"
-          style={{ flex: 1 }}
+          className="flex flex-col items-center text-center lg:w-1/2 lg:items-start lg:text-left"
         >
           <h2
-            className="font-serif font-normal text-brown-dark"
+            className="font-serif font-normal text-white"
             style={{
               fontSize: "clamp(36px, 5vw, 68px)",
               lineHeight: 1.1,
@@ -32,41 +31,44 @@ export default function InstructorsCTA() {
             }}
           >
             {instructorsCTAContent.headingStart}{" "}
-            <em className="italic text-sage-dark">{instructorsCTAContent.headingAccent}</em>
+            <em className="italic text-sage">{instructorsCTAContent.headingAccent}</em>
           </h2>
           <p
-            className="mt-6 max-w-[460px] text-brown-medium"
+            className="mt-6 max-w-[460px] text-white/60"
             style={{ fontSize: 16, lineHeight: "26px" }}
           >
             {instructorsCTAContent.subtitle}
           </p>
           <div className="mt-8">
-            <ArrowButton href="#memberships" variant="sage">
+            <ArrowButton href="#memberships" variant="light">
               {instructorsCTAContent.ctaLabel}
             </ArrowButton>
           </div>
         </motion.div>
 
-        {/* Right circle image with parallax */}
+        {/* Right photo */}
         <motion.div
           initial={{ opacity: 0, x: 15 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.5, delay: 0.1, ease: [0.25, 0.1, 0, 1] }}
-          style={{
-            y: imageY,
-            width: "clamp(260px, 40vw, 540px)",
-            height: "clamp(320px, 55vw, 734px)",
-            borderRadius: "500px",
-          }}
-          className="relative overflow-hidden"
+          className="relative lg:w-1/2 flex justify-center"
         >
-          <Image
-            src={instructorsCTAContent.image}
-            alt="Nova Studio trainer"
-            fill
-            className="object-cover"
-          />
+          <div
+            className="relative overflow-hidden"
+            style={{
+              width: "clamp(280px, 35vw, 420px)",
+              height: "clamp(380px, 48vw, 580px)",
+              borderRadius: 500,
+            }}
+          >
+            <Image
+              src={instructorsCTAContent.image}
+              alt="Shirley"
+              fill
+              className="object-cover"
+            />
+          </div>
         </motion.div>
       </div>
     </section>

@@ -31,28 +31,28 @@ export const sessionsContent = {
       id: 1,
       title: "Personal Training",
       description:
-        "Geen standaard schema's. Jouw training baseer ik op jouw doelen, anatomie en hormonen. Één op één, volledig op maat — en met genoeg lol om het nooit als een straf te voelen.",
+        "Geen standaard schema's. Jouw training baseer ik op jouw doelen, anatomie en hormonen. Één op één, volledig op maat,en met genoeg lol om het nooit als een straf te voelen.",
     },
     {
       id: 2,
       title: "Zwangerschapsfitness",
       description:
-        "Of je nu zwanger bent of net bevallen — je lichaam verdient de juiste begeleiding. Ik zorg dat de lessen veilig, effectief en afgestemd zijn op jouw fase. Want sterk zijn mag, ook met een ronde buik of een baby op de heup.",
+        "Of je nu zwanger bent of net bevallen,je lichaam verdient de juiste begeleiding. Ik zorg dat de lessen veilig, effectief en afgestemd zijn op jouw fase. Want sterk zijn mag, ook met een ronde buik of een baby op de heup.",
     },
     {
       id: 3,
       title: "Hormooncoaching",
       description:
-        "Mannen en vrouwen trainen hormonaal gezien totaal anders. Met mijn hormooncoaching geef ik je inzicht in wat er in jouw lichaam speelt, zodat je werkt mét je hormonen — en eindelijk voelt hoe het hoort.",
+        "Mannen en vrouwen trainen hormonaal gezien totaal anders. Met mijn hormooncoaching geef ik je inzicht in wat er in jouw lichaam speelt, zodat je werkt mét je hormonen,en eindelijk voelt hoe het hoort.",
     },
   ],
 };
 
 export const instructorsCTAContent = {
-  headingStart: "Maak kennis met",
+  headingStart: "Jouw personal trainer,",
   headingAccent: "Shirley",
   subtitle:
-    "Hoi, ik ben Shirley! Ik combineer mijn kennis van hormonen, anatomie en sportwetenschap met een flinke dosis energie en humor. Bij mij train je niet alleen je lichaam, maar ga je ook met een goed gevoel naar huis. Lachen mag — en resultaat is gegarandeerd.",
+    "Hoi, ik ben Shirley! Ik combineer mijn kennis van hormonen, anatomie en sportwetenschap met een flinke dosis energie en humor. Bij mij train je niet alleen je lichaam, maar ga je ook met een goed gevoel naar huis. Lachen mag,en resultaat is gegarandeerd.",
   ctaLabel: "Boek een proefles",
   image: "/nova-shirley-24.jpg",
 };
@@ -68,13 +68,13 @@ export const reviewsContent = {
     {
       id: 1,
       title: "Eindelijk begrijp ik mijn eigen lichaam!",
-      text: "Dankzij de hormooncoaching van Shirley snap ik nu waarom ik me al jaren zo moe voelde. Na twee maanden voel ik me zoveel beter — meer energie, betere slaap en ik ben weer trots op mezelf.",
+      text: "Dankzij de hormooncoaching van Shirley snap ik nu waarom ik me al jaren zo moe voelde. Na twee maanden voel ik me zoveel beter,meer energie, betere slaap en ik ben weer trots op mezelf.",
       name: "Marieke B.",
       variant: "light",
     },
     {
       id: 2,
-      title: "Sporten tijdens mijn zwangerschap — beste beslissing ooit.",
+      title: "Sporten tijdens mijn zwangerschap,beste beslissing ooit.",
       text: "Ik was bang om te sporten tijdens mijn zwangerschap, maar bij Shirley voelde ik me meteen op mijn gemak. Ze weet precies wat veilig is én zorgt dat het nooit saai wordt. Ik heb me de hele zwangerschap sterk gevoeld.",
       name: "Fatima A.",
       variant: "dark",
@@ -82,7 +82,7 @@ export const reviewsContent = {
     {
       id: 3,
       title: "Klein studio, groot resultaat.",
-      text: "De kleinschaligheid is precies wat het zo bijzonder maakt. Je bent geen nummer, maar een mens. Shirley kent jou, jouw lichaam en jouw doelen. En ja — je lacht ook nog.",
+      text: "De kleinschaligheid is precies wat het zo bijzonder maakt. Je bent geen nummer, maar een mens. Shirley kent jou, jouw lichaam en jouw doelen. En ja,je lacht ook nog.",
       name: "Denise W.",
       variant: "light",
     },
@@ -92,11 +92,15 @@ export const reviewsContent = {
 export const galleryContent = {
   headingStart: "Een kijkje in",
   headingAccent: "Nova Studio",
-  headingEnd: "— high-end, kleinschalig, persoonlijk",
+  headingEnd: "high-end, kleinschalig, persoonlijk",
   images: [
     "/nova-shirley-16.jpg",
-    "/nova-shirley-22.jpg",
-    "/nova-shirley-23.jpg",
+    "/studio-1-6.avif",
+    "/studio-1-7.avif",
+  ],
+  extraImages: [
+    "/nova-shirley-20.jpg",
+    "/nova-shirley-24.jpg",
   ],
 };
 
@@ -105,7 +109,7 @@ export const membershipsContent = {
   headingAccent: "abonnement",
   headingEnd: "dat bij jou past",
   subtitle:
-    "Geen grote groepen, geen standaard aanpak. Bij mij is het kleinschalig en persoonlijk — zodat jij de aandacht krijgt die je verdient.",
+    "Geen grote groepen, geen standaard aanpak. Bij mij is het kleinschalig en persoonlijk,zodat jij de aandacht krijgt die je verdient.",
   plans: [
     {
       id: 1,
@@ -140,19 +144,16 @@ export const membershipsContent = {
     },
     {
       id: 3,
-      name: "Onbeperkt",
-      price: "€119",
-      period: "/maand",
+      name: "Personal Training",
+      price: "€70",
+      period: "/les",
       featured: false,
       features: [
-        "Onbeperkt Small Group Training",
+        "Één-op-één training met Shirley",
+        "Volledig op maat: doelen, anatomie, hormonen",
         "Persoonlijk trainingsschema",
-        "Begeleiding door vaste coach",
-        "Kleine groepen (4–8 personen)",
-        "Zaterdag bootcamp inbegrepen",
-        "Vrij trainen buiten lestijden",
-        "Inclusief hormooncoaching intake",
-        "Maandelijks opzegbaar",
+        "Voeding- en leefstijladvies",
+        "Flexibel inplanbaar",
       ],
     },
   ],
@@ -204,7 +205,7 @@ export const contactContent = {
   headingAccent: "Nova Studio?",
   subtitle:
     "Interesse in een proefles of wil je meer weten over hormooncoaching of zwangerschapsfitness? Stel gerust al je vragen, ik sta voor je klaar!",
-  image: "/nova-shirley-22.jpg",
+  image: "/nova-contact.jpg",
 };
 
 export const footerContent = {

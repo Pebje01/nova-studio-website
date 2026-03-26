@@ -4,7 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-type Variant = "light" | "outline" | "sage" | "dark";
+type Variant = "light" | "outline" | "sage" | "dark" | "hero";
 
 interface ArrowButtonProps {
   children: React.ReactNode;
@@ -20,8 +20,9 @@ interface ArrowButtonProps {
 const variantBase: Record<Variant, string> = {
   light: "text-brown-dark border border-transparent",
   outline: "text-brown-dark border border-gray-border",
-  sage: "text-white border border-transparent",
+  sage: "text-brown-dark border border-transparent",
   dark: "text-white border border-transparent",
+  hero: "text-brown-dark border border-transparent",
 };
 
 function ButtonInner({ children, hovered }: { children: React.ReactNode; hovered: boolean }) {
@@ -52,6 +53,7 @@ const variantHoverBg: Record<Variant, string> = {
   outline: "#a3b096",
   sage: "#ffffff",
   dark: "#a3b096",
+  hero: "#c8d4c0",
 };
 
 const variantDefaultBg: Record<Variant, string> = {
@@ -59,6 +61,7 @@ const variantDefaultBg: Record<Variant, string> = {
   outline: "transparent",
   sage: "#a3b096",
   dark: "#221e20",
+  hero: "#ede9f0",
 };
 
 const variantHoverText: Record<Variant, string | undefined> = {
@@ -66,6 +69,7 @@ const variantHoverText: Record<Variant, string | undefined> = {
   outline: "#221e20",
   sage: "#221e20",
   dark: "#ffffff",
+  hero: "#221e20",
 };
 
 export default function ArrowButton({

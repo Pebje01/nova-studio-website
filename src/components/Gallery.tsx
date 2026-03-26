@@ -18,7 +18,7 @@ export default function Gallery() {
     );
 
   return (
-    <section className="bg-white py-[120px] lg:py-[160px]">
+    <section className="py-[120px] lg:py-[160px]" style={{ backgroundColor: "#E0D9D1" }}>
       <div className="mx-auto max-w-[1440px] px-[30px] lg:px-[68px]">
         <motion.h2
           initial={{ opacity: 0, y: 10 }}
@@ -99,6 +99,38 @@ export default function Gallery() {
             />
           </svg>
         </button>
+      </div>
+
+      {/* Extra two photos below slider */}
+      <div
+        className="mx-auto mt-5 grid grid-cols-2 gap-5"
+        style={{
+          maxWidth: 1400,
+          marginLeft: "clamp(16px, 4vw, 60px)",
+          marginRight: "clamp(16px, 4vw, 60px)",
+        }}
+      >
+        {galleryContent.extraImages.map((src, i) => (
+          <motion.div
+            key={src}
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.4, delay: 0.1 * i, ease: [0.25, 0.1, 0, 1] }}
+            className="relative overflow-hidden"
+            style={{
+              height: "clamp(160px, 28vw, 400px)",
+              borderRadius: 16,
+            }}
+          >
+            <Image
+              src={src}
+              alt={`Nova Studio extra ${i + 1}`}
+              fill
+              className="object-cover"
+            />
+          </motion.div>
+        ))}
       </div>
     </section>
   );

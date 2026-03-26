@@ -52,7 +52,7 @@ export default function Memberships() {
               whileHover={{ y: -6, boxShadow: "0 20px 40px rgba(0,0,0,0.08)", transition: { duration: 0.3 } }}
               className={`flex flex-col justify-between p-6 md:p-8 lg:p-10 ${
                 plan.featured
-                  ? "bg-sage text-white"
+                  ? "bg-brown-dark text-white"
                   : "bg-white text-brown-dark border border-gray-border"
               }`}
               style={{ borderRadius: 20 }}
