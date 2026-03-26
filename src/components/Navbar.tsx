@@ -3,32 +3,8 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { siteConfig, navLinks } from "@/lib/content";
-
-function LotusIcon({ className = "" }: { className?: string }) {
-  return (
-    <svg
-      width="18"
-      height="18"
-      viewBox="0 0 24 24"
-      fill="none"
-      className={className}
-    >
-      <path
-        d="M12 21c-1.5-1.5-6-6.5-6-11C6 5.5 8.7 3 12 3s6 2.5 6 7c0 4.5-4.5 9.5-6 11z"
-        fill="currentColor"
-        opacity="0.3"
-      />
-      <path
-        d="M12 21c-3-2-8-7-8-12 0-3 2-6 5-6s3 1.5 3 3c0-1.5 0-3 3-3s5 3 5 6c0 5-5 10-8 12z"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        fill="none"
-      />
-      <path d="M12 13c-2-1-4-3-4-6M12 13c2-1 4-3 4-6" stroke="currentColor" strokeWidth="1" opacity="0.5" />
-    </svg>
-  );
-}
+import Image from "next/image";
+import { navLinks } from "@/lib/content";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -61,27 +37,17 @@ export default function Navbar() {
       {/* Logo */}
       <Link
         href="/"
-        className="relative z-10 flex items-center gap-2"
+        className="relative z-10"
       >
-        <div
-          className={`flex h-[36px] w-[36px] items-center justify-center rounded-full transition-colors duration-300 ${
-            scrolled ? "bg-cream" : "bg-white/30"
-          }`}
-        >
-          <LotusIcon
-            className={`transition-colors duration-300 ${
-              scrolled ? "text-brown-dark" : "text-white"
-            }`}
-          />
-        </div>
-        <span
-          className={`font-semibold transition-colors duration-300 ${
-            scrolled ? "text-brown-dark" : "text-white"
-          }`}
-          style={{ fontSize: 13, letterSpacing: "0.3px", textTransform: "uppercase" }}
-        >
-          {siteConfig.name}
-        </span>
+        <Image
+          src={scrolled ? "/logo-dark.svg" : "/logo-white.svg"}
+          alt="Nova Studio"
+          width={120}
+          height={48}
+          className="transition-opacity duration-300"
+          style={{ height: 40, width: "auto" }}
+          priority
+        />
       </Link>
 
       {/* Desktop nav links */}
