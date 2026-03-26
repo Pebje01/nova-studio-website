@@ -42,8 +42,8 @@ export default function InstructorsCTA() {
           </p>
           <Link
             href="#memberships"
-            className="mt-8 inline-flex items-center bg-sage font-medium text-white transition-all duration-300 hover:bg-sage-dark"
-            style={{ fontSize: 18, borderRadius: 80, padding: "26px 40px 22px", fontWeight: 500 }}
+            className="mt-8 inline-flex items-center uppercase bg-sage font-medium text-white transition-all duration-300 hover:bg-sage-dark"
+            style={{ fontSize: 14, borderRadius: "4px 24px 24px 4px", fontWeight: 500, padding: "12px 28px", letterSpacing: "0.3px" }}
           >
             {instructorsCTAContent.ctaLabel}
           </Link>

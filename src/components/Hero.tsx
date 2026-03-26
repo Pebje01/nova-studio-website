@@ -10,7 +10,7 @@ export default function Hero() {
   const bgY = useTransform(scrollY, [0, 500], [0, 150]);
 
   return (
-    <section className="relative flex min-h-screen items-center overflow-hidden" style={{ paddingTop: "160px" }}>
+    <section className="relative flex min-h-screen items-center overflow-hidden" style={{ paddingTop: "120px" }}>
       {/* Background image with parallax */}
       <motion.div className="absolute inset-0" style={{ y: bgY }}>
         <Image
@@ -63,8 +63,8 @@ export default function Hero() {
             >
               <Link
                 href="#memberships"
-                className="inline-flex items-center bg-white font-medium text-brown-dark transition-all duration-300 hover:bg-cream"
-                style={{ fontSize: 18, borderRadius: 80, fontWeight: 500, padding: "26px 40px 22px" }}
+                className="inline-flex items-center uppercase bg-white font-medium text-brown-dark transition-all duration-300 hover:bg-cream"
+                style={{ fontSize: 14, borderRadius: "4px 24px 24px 4px", fontWeight: 500, padding: "12px 28px", letterSpacing: "0.3px" }}
               >
                 {heroContent.ctaLabel}
               </Link>

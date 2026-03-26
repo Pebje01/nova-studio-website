@@ -8,8 +8,8 @@ import { siteConfig, navLinks } from "@/lib/content";
 function LotusIcon({ className = "" }: { className?: string }) {
   return (
     <svg
-      width="24"
-      height="24"
+      width="18"
+      height="18"
       viewBox="0 0 24 24"
       fill="none"
       className={className}
@@ -45,27 +45,27 @@ export default function Navbar() {
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.3 }}
-      className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-[20px] lg:px-[96px]"
-      style={{ height: 100 }}
+      className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-[16px] lg:px-[68px]"
+      style={{ height: 64 }}
     >
-      {/* Background pill */}
+      {/* Background pill — slim */}
       <div
-        className={`absolute inset-x-[68px] top-[14px] bottom-[0px] transition-all duration-300 ${
+        className={`absolute inset-x-[48px] lg:inset-x-[52px] top-[10px] transition-all duration-300 ${
           scrolled
-            ? "bg-white/90 shadow-md backdrop-blur-md"
-            : "bg-white/30 backdrop-blur-sm"
+            ? "bg-white/90 shadow-sm backdrop-blur-md"
+            : "bg-white/20 backdrop-blur-sm"
         }`}
-        style={{ height: 89, borderRadius: 100 }}
+        style={{ height: 44, borderRadius: 100 }}
       />
 
       {/* Logo */}
       <Link
         href="/"
-        className="relative z-10 flex items-center gap-3"
+        className="relative z-10 flex items-center gap-2"
       >
         <div
-          className={`flex h-[52px] w-[52px] items-center justify-center rounded-full transition-colors duration-300 ${
-            scrolled ? "bg-cream" : "bg-white/40"
+          className={`flex h-[36px] w-[36px] items-center justify-center rounded-full transition-colors duration-300 ${
+            scrolled ? "bg-cream" : "bg-white/30"
           }`}
         >
           <LotusIcon
@@ -75,39 +75,47 @@ export default function Navbar() {
           />
         </div>
         <span
-          className={`text-base font-semibold transition-colors duration-300 ${
+          className={`font-semibold transition-colors duration-300 ${
             scrolled ? "text-brown-dark" : "text-white"
           }`}
-          style={{ fontSize: 16, letterSpacing: "-0.2px" }}
+          style={{ fontSize: 13, letterSpacing: "0.3px", textTransform: "uppercase" }}
         >
           {siteConfig.name}
         </span>
       </Link>
 
       {/* Desktop nav links */}
-      <div className="relative z-10 hidden items-center gap-12 lg:flex">
+      <div className="relative z-10 hidden items-center gap-8 lg:flex">
         {navLinks.map((link) => (
           <Link
             key={link.label}
             href={link.href}
-            className={`text-sm font-medium transition-colors duration-300 ${
+            className={`font-medium transition-colors duration-300 ${
               scrolled
                 ? "text-brown-dark hover:text-sage-dark"
-                : "text-white/90 hover:text-white"
+                : "text-white/80 hover:text-white"
             }`}
-            style={{ fontSize: 18 }}
+            style={{ fontSize: 13 }}
           >
             {link.label}
           </Link>
         ))}
         <Link
           href="#contact"
-          className={`border px-6 py-3 text-sm font-medium transition-all duration-300 ${
+          className={`font-medium transition-all duration-300 ${
             scrolled
-              ? "border-brown-dark bg-transparent text-brown-dark hover:bg-brown-dark hover:text-white"
-              : "border-white bg-white text-brown-dark hover:bg-transparent hover:text-white"
+              ? "bg-brown-dark text-white hover:bg-brown-medium"
+              : "bg-white text-brown-dark hover:bg-cream"
           }`}
-          style={{ fontSize: 16, borderRadius: 80, padding: "16px 36px 14px" }}
+          style={{
+            fontSize: 12,
+            padding: "8px 20px 8px 20px",
+            borderRadius: "0 20px 20px 0",
+            borderTopLeftRadius: 4,
+            borderBottomLeftRadius: 4,
+            letterSpacing: "0.5px",
+            textTransform: "uppercase",
+          }}
         >
           Contact
         </Link>
@@ -116,26 +124,26 @@ export default function Navbar() {
       {/* Mobile hamburger */}
       <button
         onClick={() => setMobileOpen(!mobileOpen)}
-        className="relative z-10 flex h-10 w-10 flex-col items-center justify-center gap-1.5 lg:hidden"
+        className="relative z-10 flex h-8 w-8 flex-col items-center justify-center gap-1 lg:hidden"
       >
         <span
-          className={`h-0.5 w-6 transition-all duration-300 ${
+          className={`h-0.5 w-5 transition-all duration-300 ${
             mobileOpen
-              ? `rotate-45 translate-y-2 ${scrolled ? "bg-brown-dark" : "bg-white"}`
+              ? `rotate-45 translate-y-1.5 ${scrolled ? "bg-brown-dark" : "bg-white"}`
               : scrolled
               ? "bg-brown-dark"
               : "bg-white"
           }`}
         />
         <span
-          className={`h-0.5 w-6 transition-all duration-300 ${
+          className={`h-0.5 w-5 transition-all duration-300 ${
             mobileOpen ? "opacity-0" : scrolled ? "bg-brown-dark" : "bg-white"
           }`}
         />
         <span
-          className={`h-0.5 w-6 transition-all duration-300 ${
+          className={`h-0.5 w-5 transition-all duration-300 ${
             mobileOpen
-              ? `-rotate-45 -translate-y-2 ${scrolled ? "bg-brown-dark" : "bg-white"}`
+              ? `-rotate-45 -translate-y-1.5 ${scrolled ? "bg-brown-dark" : "bg-white"}`
               : scrolled
               ? "bg-brown-dark"
               : "bg-white"
@@ -151,15 +159,15 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2 }}
-            className="absolute top-[80px] left-4 right-4 z-50 rounded-2xl bg-white p-6 shadow-xl lg:hidden"
+            className="absolute top-[60px] left-4 right-4 z-50 rounded-2xl bg-white p-5 shadow-xl lg:hidden"
           >
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-3">
               {navLinks.map((link) => (
                 <Link
                   key={link.label}
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
-                  className="text-base font-medium text-brown-dark"
+                  className="text-sm font-medium text-brown-dark"
                 >
                   {link.label}
                 </Link>
@@ -167,7 +175,8 @@ export default function Navbar() {
               <Link
                 href="#contact"
                 onClick={() => setMobileOpen(false)}
-                className="mt-2 rounded-full bg-brown-dark px-6 py-3 text-center text-sm font-medium text-white"
+                className="mt-2 bg-brown-dark px-5 py-2 text-center text-xs font-medium uppercase tracking-wide text-white"
+                style={{ borderRadius: "0 16px 16px 0", borderTopLeftRadius: 4, borderBottomLeftRadius: 4 }}
               >
                 Contact
               </Link>
