@@ -109,12 +109,9 @@ export default function Navbar() {
           }`}
           style={{
             fontSize: 12,
-            padding: "8px 20px 8px 20px",
-            borderRadius: "0 20px 20px 0",
-            borderTopLeftRadius: 4,
-            borderBottomLeftRadius: 4,
-            letterSpacing: "0.5px",
-            textTransform: "uppercase",
+            padding: "8px 22px",
+            borderRadius: 50,
+            letterSpacing: "0.3px",
           }}
         >
           Contact
@@ -175,8 +172,8 @@ export default function Navbar() {
               <Link
                 href="#contact"
                 onClick={() => setMobileOpen(false)}
-                className="mt-2 bg-brown-dark px-5 py-2 text-center text-xs font-medium uppercase tracking-wide text-white"
-                style={{ borderRadius: "0 16px 16px 0", borderTopLeftRadius: 4, borderBottomLeftRadius: 4 }}
+                className="mt-2 bg-brown-dark px-5 py-2 text-center text-xs font-medium text-white"
+                style={{ borderRadius: 50 }}
               >
                 Contact
               </Link>

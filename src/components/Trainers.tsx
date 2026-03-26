@@ -42,7 +42,7 @@ export default function Trainers() {
                 style={{
                   width: "clamp(200px, 24vw, 340px)",
                   height: "clamp(280px, 34vw, 490px)",
-                  borderRadius: "50%",
+                  borderRadius: "200px",
                 }}
               >
                 <Image

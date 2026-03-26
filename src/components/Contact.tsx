@@ -64,8 +64,8 @@ export default function Contact() {
               />
               <button
                 type="submit"
-                className="mt-2 w-full uppercase bg-sage font-medium text-white transition-all duration-300 hover:bg-sage/80 md:w-auto md:self-start"
-                style={{ fontSize: 13, borderRadius: "4px 24px 24px 4px", fontWeight: 500, padding: "12px 28px", letterSpacing: "0.3px" }}
+                className="mt-2 w-full bg-sage font-medium text-white transition-all duration-300 hover:bg-sage/80 md:w-auto md:self-start"
+                style={{ fontSize: 13, borderRadius: 50, fontWeight: 500, padding: "12px 28px", letterSpacing: "0.3px" }}
               >
                 Send message
               </button>

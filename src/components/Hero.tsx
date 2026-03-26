@@ -63,8 +63,8 @@ export default function Hero() {
             >
               <Link
                 href="#memberships"
-                className="inline-flex items-center uppercase bg-white font-medium text-brown-dark transition-all duration-300 hover:bg-cream"
-                style={{ fontSize: 14, borderRadius: "4px 24px 24px 4px", fontWeight: 500, padding: "12px 28px", letterSpacing: "0.3px" }}
+                className="inline-flex items-center bg-white font-medium text-brown-dark transition-all duration-300 hover:bg-cream"
+                style={{ fontSize: 14, borderRadius: 50, fontWeight: 500, padding: "12px 28px", letterSpacing: "0.3px" }}
               >
                 {heroContent.ctaLabel}
               </Link>
@@ -78,9 +78,9 @@ export default function Hero() {
             whileInView={{ scale: [0.95, 1] }}
             transition={{ duration: 0.6, delay: 0.15, ease: [0.25, 0.1, 0, 1] }}
             className="relative hidden lg:block"
-            style={{ width: "clamp(260px, 24vw, 380px)", height: "clamp(360px, 32vw, 520px)", borderRadius: "50%" }}
+            style={{ width: "clamp(260px, 24vw, 380px)", height: "clamp(360px, 32vw, 520px)", borderRadius: "160px" }}
           >
-            <div className="h-full w-full overflow-hidden" style={{ borderRadius: "50%" }}>
+            <div className="h-full w-full overflow-hidden" style={{ borderRadius: "160px" }}>
               <Image
                 src={heroContent.heroCircleImage}
                 alt="Yoga pose"

@@ -110,12 +110,12 @@ export default function Memberships() {
 
               <Link
                 href="#contact"
-                className={`mt-8 flex items-center justify-center uppercase font-medium transition-all duration-300 ${
+                className={`mt-8 flex items-center justify-center font-medium transition-all duration-300 ${
                   plan.featured
                     ? "bg-white text-brown-dark hover:bg-cream"
                     : "border border-gray-border bg-transparent text-brown-dark hover:bg-cream"
                 }`}
-                style={{ fontSize: 12, borderRadius: "4px 20px 20px 4px", fontWeight: 500, padding: "10px 24px", letterSpacing: "0.5px" }}
+                style={{ fontSize: 12, borderRadius: 50, fontWeight: 500, padding: "10px 24px", letterSpacing: "0.5px" }}
               >
                 Buy a subscription
               </Link>
