@@ -7,8 +7,8 @@ import ArrowButton from "@/components/ui/ArrowButton";
 
 export default function Contact() {
   return (
-    <section id="contact" className="bg-sage-dark py-[80px] lg:py-[160px]" style={{ borderRadius: "40px 40px 0 0" }}>
-      <div className="mx-auto max-w-[1440px] px-[30px] lg:px-[68px]">
+    <section id="contact" className="bg-sage-dark py-[60px] lg:py-[160px]" style={{ borderRadius: "40px 40px 0 0" }}>
+      <div className="mx-auto max-w-[1440px] px-[20px] lg:px-[68px]">
         <div className="flex flex-col items-center gap-10 lg:flex-row lg:gap-16">
           {/* Form */}
           <motion.div
@@ -19,11 +19,10 @@ export default function Contact() {
             className="w-full lg:w-1/2"
           >
             <h2
-              className="font-serif font-normal text-white"
+              className="font-serif font-normal text-white heading-tracking"
               style={{
                 fontSize: "clamp(36px, 5vw, 68px)",
                 lineHeight: 1.1,
-                letterSpacing: "-4.08px",
               }}
             >
               {contactContent.headingStart}{" "}

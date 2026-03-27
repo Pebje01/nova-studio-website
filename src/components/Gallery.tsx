@@ -18,18 +18,17 @@ export default function Gallery() {
     );
 
   return (
-    <section className="py-[120px] lg:py-[160px]" style={{ backgroundColor: "#E0D9D1" }}>
-      <div className="mx-auto max-w-[1440px] px-[30px] lg:px-[68px]">
+    <section className="py-[60px] lg:py-[160px]" style={{ backgroundColor: "#E0D9D1" }}>
+      <div className="mx-auto max-w-[1440px] px-[20px] lg:px-[68px]">
         <motion.h2
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.3 }}
-          className="text-center font-serif font-normal text-brown-dark"
+          className="text-center font-serif font-normal text-brown-dark heading-tracking"
           style={{
             fontSize: "clamp(36px, 5vw, 68px)",
             lineHeight: 1.1,
-            letterSpacing: "-4.08px",
           }}
         >
           {galleryContent.headingStart}{" "}
@@ -73,7 +72,7 @@ export default function Gallery() {
         {/* Navigation arrows */}
         <button
           onClick={prev}
-          className="absolute left-2 top-1/2 z-10 flex h-14 w-14 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-lg transition-transform hover:scale-105 lg:left-4"
+          className="absolute left-3 top-1/2 z-10 flex h-10 w-10 lg:h-14 lg:w-14 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-lg transition-transform hover:scale-105 lg:left-4"
         >
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
             <path
@@ -87,7 +86,7 @@ export default function Gallery() {
         </button>
         <button
           onClick={next}
-          className="absolute right-2 top-1/2 z-10 flex h-14 w-14 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-lg transition-transform hover:scale-105 lg:right-4"
+          className="absolute right-3 top-1/2 z-10 flex h-10 w-10 lg:h-14 lg:w-14 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-lg transition-transform hover:scale-105 lg:right-4"
         >
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
             <path

@@ -25,7 +25,7 @@ function LotusIcon() {
 export default function Footer() {
   return (
     <footer className="bg-brown-dark py-[80px] lg:py-[100px]">
-      <div className="mx-auto max-w-[1440px] px-[30px] lg:px-[68px]">
+      <div className="mx-auto max-w-[1440px] px-[20px] lg:px-[68px]">
         <div className="flex flex-col gap-8 lg:flex-row lg:gap-12 lg:justify-between">
           {/* Logo + description */}
           <div className="max-w-[340px]">

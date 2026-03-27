@@ -20,18 +20,17 @@ function Stars({ light }: { light?: boolean }) {
 
 export default function Reviews() {
   return (
-    <section id="reviews" className="bg-cream py-[120px] lg:py-[160px]">
-      <div className="mx-auto max-w-[1440px] px-[30px] lg:px-[68px]">
+    <section id="reviews" className="bg-cream py-[60px] lg:py-[160px]">
+      <div className="mx-auto max-w-[1440px] px-[20px] lg:px-[68px]">
         <motion.h2
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.3 }}
-          className="text-center font-serif font-normal text-brown-dark"
+          className="text-center font-serif font-normal text-brown-dark heading-tracking"
           style={{
             fontSize: "clamp(36px, 5vw, 68px)",
             lineHeight: 1.1,
-            letterSpacing: "-4.08px",
           }}
         >
           {reviewsContent.headingStart}{" "}

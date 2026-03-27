@@ -32,6 +32,15 @@ html {
   scroll-behavior: smooth;
 }
 
+.heading-tracking {
+  letter-spacing: -1.5px;
+}
+@media (min-width: 1024px) {
+  .heading-tracking {
+    letter-spacing: -4.08px;
+  }
+}
+
 body {
   background: #ffffff;
   color: #221e20;

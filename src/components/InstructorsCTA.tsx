@@ -12,8 +12,8 @@ export default function InstructorsCTA() {
   const imageY = useTransform(scrollYProgress, [0, 1], [40, -40]);
 
   return (
-    <section ref={ref} className="bg-brown-dark py-[100px] lg:py-[140px]">
-      <div className="mx-auto flex max-w-[1440px] flex-col items-center gap-12 px-[30px] lg:flex-row lg:gap-20 lg:px-[68px]">
+    <section ref={ref} className="bg-brown-dark py-[60px] lg:py-[140px]">
+      <div className="mx-auto flex max-w-[1440px] flex-col items-center gap-10 px-[20px] lg:flex-row lg:gap-20 lg:px-[68px]">
         {/* Left text */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
@@ -23,11 +23,10 @@ export default function InstructorsCTA() {
           className="flex flex-col items-center text-center lg:w-1/2 lg:items-start lg:text-left"
         >
           <h2
-            className="font-serif font-normal text-white"
+            className="font-serif font-normal text-white heading-tracking"
             style={{
               fontSize: "clamp(36px, 5vw, 68px)",
               lineHeight: 1.1,
-              letterSpacing: "-4.08px",
             }}
           >
             {instructorsCTAContent.headingStart}{" "}
@@ -57,8 +56,8 @@ export default function InstructorsCTA() {
           <div
             className="relative overflow-hidden"
             style={{
-              width: "clamp(280px, 35vw, 420px)",
-              height: "clamp(380px, 48vw, 580px)",
+              width: "clamp(220px, 65vw, 420px)",
+              height: "clamp(300px, 90vw, 580px)",
               borderRadius: 500,
             }}
           >

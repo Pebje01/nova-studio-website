@@ -61,7 +61,7 @@ export default function Hero() {
       </AnimatePresence>
 
       {/* Content */}
-      <div className="relative z-10 mx-auto w-full max-w-[1440px] px-[30px] lg:px-[68px]">
+      <div className="relative z-10 mx-auto w-full max-w-[1440px] px-[20px] lg:px-[68px]">
         <div className="flex items-center">
           <div className="max-w-[720px]">
             <motion.h1
@@ -70,16 +70,16 @@ export default function Hero() {
               transition={{ duration: 0.6, ease: [0.25, 0.1, 0, 1] }}
               className="font-serif font-normal text-white"
               style={{
-                fontSize: "clamp(48px, 5.8vw, 80px)",
+                fontSize: "clamp(36px, 5.8vw, 80px)",
                 lineHeight: 1.0,
-                letterSpacing: "-2.4px",
+                letterSpacing: "clamp(-1.2px, -0.3vw, -2.4px)",
               }}
             >
-              <span className="whitespace-nowrap">{heroContent.headingStart}{" "}
-              <em className="italic">{heroContent.headingAccent}</em></span>
+              {heroContent.headingStart}{" "}
+              <em className="italic">{heroContent.headingAccent}</em>
               <br />
-              <span className="whitespace-nowrap">{heroContent.headingMiddle}{" "}
-              <em className="italic">{heroContent.headingAccent2}</em></span>{" "}
+              {heroContent.headingMiddle}{" "}
+              <em className="italic">{heroContent.headingAccent2}</em>{" "}
               {heroContent.headingEnd}
             </motion.h1>
 
@@ -87,8 +87,8 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.15, ease: [0.25, 0.1, 0, 1] }}
-              className="mt-10 max-w-[514px] font-sans text-white/80"
-              style={{ fontSize: 18, lineHeight: "25.2px" }}
+              className="mt-6 lg:mt-10 max-w-[514px] font-sans text-white/80"
+              style={{ fontSize: "clamp(14px, 2.5vw, 18px)", lineHeight: 1.5 }}
             >
               {heroContent.subtitle}
             </motion.p>

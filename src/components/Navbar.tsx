@@ -38,15 +38,14 @@ export default function Navbar() {
       <Link
         href="/"
         className="relative z-10"
-        style={{ marginLeft: 20 }}
+        style={{ marginLeft: 8 }}
       >
         <Image
           src={scrolled ? "/logo-dark.svg" : "/logo-white.svg"}
           alt="Nova Studio"
           width={120}
           height={48}
-          className="transition-opacity duration-300"
-          style={{ height: 120, width: "auto" }}
+          className="transition-opacity duration-300 h-[70px] lg:h-[120px] w-auto"
           priority
         />
       </Link>

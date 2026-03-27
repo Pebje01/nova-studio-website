@@ -38,18 +38,17 @@ export default function Sessions() {
   }, []);
 
   return (
-    <section className="bg-white py-[120px] lg:py-[160px]">
-      <div className="mx-auto max-w-[1440px] px-[30px] lg:px-[68px]">
+    <section className="bg-white py-[60px] lg:py-[160px]">
+      <div className="mx-auto max-w-[1440px] px-[20px] lg:px-[68px]">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.5, ease: [0.25, 0.1, 0, 1] }}
-          className="text-center font-serif font-normal text-brown-dark"
+          className="text-center font-serif font-normal text-brown-dark heading-tracking"
           style={{
             fontSize: "clamp(36px, 5vw, 68px)",
             lineHeight: 1.1,
-            letterSpacing: "-4.08px",
           }}
         >
           {sessionsContent.headingStart}{" "}
@@ -75,10 +74,10 @@ export default function Sessions() {
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: 0.08 * i, ease: [0.25, 0.1, 0, 1] }}
             whileHover={{ boxShadow: "inset 0 0 0 2px rgba(255,255,255,0.25)", transition: { duration: 0.2 } }}
-            className="flex-shrink-0 flex flex-col justify-between p-10"
+            className="flex-shrink-0 flex flex-col justify-between p-6 md:p-10"
             style={{
-              width: "clamp(280px, 80vw, 420px)",
-              minHeight: "clamp(360px, 50vw, 468px)",
+              width: "clamp(260px, 75vw, 420px)",
+              minHeight: "clamp(320px, 45vw, 468px)",
               borderRadius: 20,
               scrollSnapAlign: "start",
               backgroundColor: ["#ebe6df", "#e4ded6", "#ddd6cc"][i] || "#ddd6cc",
@@ -106,7 +105,7 @@ export default function Sessions() {
       </div>
 
       {/* Progress bar */}
-      <div className="mx-auto mt-8 max-w-[1440px] px-[30px] lg:px-[68px]">
+      <div className="mx-auto mt-8 max-w-[1440px] px-[20px] lg:px-[68px]">
         <div className="h-[2px] w-full bg-gray-border">
           <motion.div
             className="h-full bg-brown-dark"
