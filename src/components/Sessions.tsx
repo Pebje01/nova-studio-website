@@ -38,7 +38,7 @@ export default function Sessions() {
   }, []);
 
   return (
-    <section className="bg-white py-[60px] lg:py-[160px]">
+    <section id="services" className="bg-white py-[60px] lg:py-[160px]">
       <div className="mx-auto max-w-[1440px] px-[20px] lg:px-[68px]">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}

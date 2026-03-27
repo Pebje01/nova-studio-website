@@ -5,7 +5,7 @@ export const siteConfig = {
 
 export const navLinks = [
   { label: "Over NOVA Studio", href: "#about" },
-  { label: "Services", href: "#services" },
+  { label: "Diensten", href: "#services" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -29,7 +29,7 @@ export const sessionsContent = {
   sessions: [
     {
       id: 1,
-      title: "Personal Training",
+      title: "Persoonlijke training",
       description:
         "Geen standaard schema's. Jouw training baseer ik op jouw doelen, anatomie en hormonen. Één op één, volledig op maat,en met genoeg lol om het nooit als een straf te voelen.",
     },
@@ -118,7 +118,7 @@ export const membershipsContent = {
       period: "/maand",
       featured: false,
       features: [
-        "2x per week Small Group Training (60 min)",
+        "2x per week small-grouptraining (60 min)",
         "Persoonlijk trainingsschema",
         "Begeleiding door vaste coach",
         "Kleine groepen (4–8 personen)",
@@ -133,7 +133,7 @@ export const membershipsContent = {
       period: "/maand",
       featured: true,
       features: [
-        "3x per week Small Group Training (60 min)",
+        "3x per week small-grouptraining (60 min)",
         "Persoonlijk trainingsschema",
         "Begeleiding door vaste coach",
         "Kleine groepen (4–8 personen)",
@@ -144,7 +144,7 @@ export const membershipsContent = {
     },
     {
       id: 3,
-      name: "Personal Training",
+      name: "Persoonlijke training",
       price: "€70",
       period: "/les",
       featured: false,
@@ -161,7 +161,7 @@ export const membershipsContent = {
 
 export const classesContent = {
   headingStart: "Rooster",
-  headingAccent: "Small Group Training",
+  headingAccent: "Small-grouptraining",
   subtitle:
     "Bekijk wanneer de groepslessen zijn ingepland en meld je aan.",
   days: [
@@ -174,27 +174,27 @@ export const classesContent = {
   ],
   schedule: {
     Maandag: [
-      { time: "9.00 – 10.00", className: "Small Group Training" },
+      { time: "9.00 – 10.00", className: "Small-grouptraining" },
       { time: "11.00 – 12.00", className: "Zwangerschapsfitness" },
     ],
     Dinsdag: [
       { time: "10.00 – 11.00", className: "Zwangerschapsfitness" },
-      { time: "19.00 – 20.00", className: "Small Group Training" },
+      { time: "19.00 – 20.00", className: "Small-grouptraining" },
     ],
     Woensdag: [
-      { time: "9.00 – 10.00", className: "Small Group Training" },
+      { time: "9.00 – 10.00", className: "Small-grouptraining" },
       { time: "11.00 – 12.00", className: "Zwangerschapsfitness" },
     ],
     Donderdag: [
-      { time: "10.00 – 11.00", className: "Small Group Training" },
+      { time: "10.00 – 11.00", className: "Small-grouptraining" },
       { time: "19.00 – 20.00", className: "Zwangerschapsfitness" },
     ],
     Vrijdag: [
       { time: "9.00 – 10.00", className: "Zwangerschapsfitness" },
-      { time: "11.00 – 12.00", className: "Small Group Training" },
+      { time: "11.00 – 12.00", className: "Small-grouptraining" },
     ],
     Zaterdag: [
-      { time: "10.00 – 11.30", className: "Small Group Training" },
+      { time: "10.00 – 11.30", className: "Small-grouptraining" },
     ],
   } as Record<string, { time: string; className: string }[]>,
   whatsappUrl: "https://wa.me/31612345678?text=Hoi%20Shirley%2C%20ik%20heb%20interesse%20in%20een%20groepsles!",
@@ -210,10 +210,10 @@ export const contactContent = {
 
 export const footerContent = {
   description:
-    "NOVA studio by Shirley Mujagic",
+    "Nova Studio door Shirley Mujagic",
   menuLinks: [
     { label: "Over NOVA Studio", href: "#about" },
-    { label: "Services", href: "#services" },
+    { label: "Diensten", href: "#services" },
     { label: "Contact", href: "#contact" },
   ],
   copyright: `\u00A9 Copyright ${new Date().getFullYear()} Nova Studio`,

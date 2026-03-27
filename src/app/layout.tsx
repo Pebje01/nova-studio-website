@@ -17,9 +17,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Nova Studio - Yoga & Wellness",
+  title: "Nova Studio | Personal Training & Hormooncoaching",
   description:
-    "Discover balance and inner harmony at Nova Studio. Yoga classes, expert instructors, and a peaceful environment.",
+    "Nova Studio in Purmerend voor personal training, zwangerschapsfitness en hormooncoaching met persoonlijke begeleiding.",
 };
 
 export default function RootLayout({
@@ -29,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="nl"
       className={`${playfair.variable} ${poppins.variable} antialiased`}
     >
       <body>{children}</body>
