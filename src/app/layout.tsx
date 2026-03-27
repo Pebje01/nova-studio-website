@@ -17,9 +17,15 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Nova Studio | Personal Training & Hormooncoaching",
+  title: "Nova Studio | Personal Training & Hormooncoaching in Purmerend",
   description:
-    "Nova Studio in Purmerend voor personal training, zwangerschapsfitness en hormooncoaching met persoonlijke begeleiding.",
+    "De leukste personal training in Purmerend. Kleinschalige high-end studio aan huis met persoonlijke begeleiding, zwangerschapsfitness en hormooncoaching door Shirley.",
+  openGraph: {
+    title: "Nova Studio | Personal Training & Hormooncoaching in Purmerend",
+    description:
+      "De leukste personal training in Purmerend. Kleinschalige high-end studio aan huis met persoonlijke begeleiding, zwangerschapsfitness en hormooncoaching door Shirley.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
