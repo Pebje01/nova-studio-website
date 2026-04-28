@@ -12,7 +12,7 @@ export default function InstructorsCTA() {
   const imageY = useTransform(scrollYProgress, [0, 1], [40, -40]);
 
   return (
-    <section ref={ref} className="bg-brown-dark py-[60px] lg:py-[140px]">
+    <section id="about" ref={ref} className="bg-brown-dark py-[60px] lg:py-[140px]">
       <div className="mx-auto flex max-w-[1440px] flex-col items-center gap-10 px-[20px] lg:flex-row lg:gap-20 lg:px-[68px]">
         {/* Left text */}
         <motion.div

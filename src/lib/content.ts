@@ -1,88 +1,86 @@
 export const siteConfig = {
   name: "Nova Studio",
-  tagline: "Fitness & Hormooncoaching",
+  tagline: "Personal training & hormooncoaching in Purmerend",
 };
 
 export const navLinks = [
-  { label: "Over NOVA Studio", href: "#about" },
-  { label: "Diensten", href: "#services" },
-  { label: "Contact", href: "#contact" },
+  { label: "Over Nova Studio", href: "#about" },
+  { label: "Trainingen", href: "#services" },
 ];
 
 export const heroContent = {
-  headingStart: "De leukste",
-  headingAccent: "personal",
-  headingMiddle: "training in",
+  headingStart: "Personal training en",
+  headingAccent: "bootcamp",
+  headingMiddle: "in",
   headingAccent2: "Purmerend",
   headingEnd: "",
   subtitle:
-    "Kom trainen in de kleinschalige high-end studio aan huis. Persoonlijke begeleiding met een lach en nog belangrijker: met resultaat. Holistische aanpak, omdat je fit voelen om veel meer gaat dan er alleen maar fit uitzien.",
-  ctaLabel: "Vraag proefles aan",
+    "Bij Nova Studio train je één op één of in een kleine groep, bij mij thuis in mijn nieuwe sportstudio. Met persoonlijke aandacht en een holistische aanpak werken we aan een nieuwe, fittere jij. Vraag je gratis intake aan!",
+  ctaLabel: "Gratis intake aanvragen",
   heroImage: "/nova-hero-1.jpg",
   heroCircleImage: "/nova-shirley-24.jpg",
 };
 
 export const sessionsContent = {
-  headingStart: "Wat ik voor je doe bij",
-  headingAccent: "Nova Studio",
+  headingStart: "Wat ik",
+  headingAccent: "aanbied",
   headingEnd: "",
   sessions: [
     {
       id: 1,
-      title: "Persoonlijke training",
+      title: "Personal training",
       description:
-        "Geen standaard schema's. Jouw training baseer ik op jouw doelen, anatomie en hormonen. Één op één, volledig op maat,en met genoeg lol om het nooit als een straf te voelen.",
+        "Één op één training, volledig afgestemd op jou. Jouw doelen, jouw tempo, jouw lichaam. Geen standaard schema. Wel een aanpak die écht werkt.",
     },
     {
       id: 2,
-      title: "Zwangerschapsfitness",
+      title: "Training met 2 à 3 personen",
       description:
-        "Of je nu zwanger bent of net bevallen,je lichaam verdient de juiste begeleiding. Ik zorg dat de lessen veilig, effectief en afgestemd zijn op jouw fase. Want sterk zijn mag, ook met een ronde buik of een baby op de heup.",
+        "Train samen met een vriendin, partner of collega. Je krijgt persoonlijke begeleiding, maar deelt de energie en motivatie. Het beste van personal training, samen.",
     },
     {
       id: 3,
-      title: "Hormooncoaching",
+      title: "Kleine groepstraining",
       description:
-        "Mannen en vrouwen trainen hormonaal gezien totaal anders. Met mijn hormooncoaching geef ik je inzicht in wat er in jouw lichaam speelt, zodat je werkt mét je hormonen,en eindelijk voelt hoe het hoort.",
+        "Trainen in een kleine vaste groep. Denk aan Bootcamp, Booty & Burn en andere lessen. Intensief, gezellig en voor elk niveau.",
     },
   ],
 };
 
 export const instructorsCTAContent = {
-  headingStart: "Jouw personal trainer,",
-  headingAccent: "Shirley",
+  headingStart: "Over",
+  headingAccent: "Nova Studio",
   subtitle:
-    "Hoi, ik ben Shirley! Ik combineer mijn kennis van hormonen, anatomie en sportwetenschap met een flinke dosis energie en humor. Bij mij train je niet alleen je lichaam, maar ga je ook met een goed gevoel naar huis. Lachen mag,en resultaat is gegarandeerd.",
-  ctaLabel: "Boek een proefles",
+    "Ik ben Shirley, gecertificeerd personal trainer. Nova Studio is mijn eigen studio aan huis in Purmerend. Geen grote sportschool, geen nummertje trekken. Bij mij weet ik wie je bent, wat je wil en wat je nodig hebt. Dat merk je meteen.",
+  ctaLabel: "Gratis intake inplannen",
   image: "/nova-shirley-24.jpg",
 };
 
-
 export const reviewsContent = {
-  headingStart: "Wat mijn",
-  headingAccent: "klanten",
+  headingStart: "Wat anderen",
+  headingAccent: "zeggen",
   headingMiddle: "",
   headingAccent2: "",
-  headingEnd: "zeggen",
+  headingEnd: "",
   reviews: [
     {
       id: 1,
-      title: "Eindelijk begrijp ik mijn eigen lichaam!",
-      text: "Dankzij de hormooncoaching van Shirley snap ik nu waarom ik me al jaren zo moe voelde. Na twee maanden voel ik me zoveel beter,meer energie, betere slaap en ik ben weer trots op mezelf.",
+      title: "Eindelijk iemand die écht luistert.",
+      text: "Dankzij de hormooncoaching van Shirley snap ik nu waarom ik me al jaren zo moe voelde. Na twee maanden voel ik me zoveel beter: meer energie, betere slaap en ik ben weer trots op mezelf.",
       name: "Marieke B.",
       variant: "light",
     },
     {
       id: 2,
-      title: "Sporten tijdens mijn zwangerschap,beste beslissing ooit.",
-      text: "Ik was bang om te sporten tijdens mijn zwangerschap, maar bij Shirley voelde ik me meteen op mijn gemak. Ze weet precies wat veilig is én zorgt dat het nooit saai wordt. Ik heb me de hele zwangerschap sterk gevoeld.",
+      title: "Zo fijn: sporten op mijn eigen tempo.",
+      text: "Ik was bang om te sporten tijdens mijn zwangerschap, maar bij Shirley voelde ik me meteen op mijn gemak. Ze weet precies wat veilig is en zorgt dat het nooit saai wordt. Ik heb me de hele zwangerschap sterk gevoeld.",
       name: "Fatima A.",
       variant: "dark",
     },
     {
       id: 3,
-      title: "Klein studio, groot resultaat.",
-      text: "De kleinschaligheid is precies wat het zo bijzonder maakt. Je bent geen nummer, maar een mens. Shirley kent jou, jouw lichaam en jouw doelen. En ja,je lacht ook nog.",
+      title: "Klein studio, groot verschil.",
+      text: "Je bent hier geen nummer. Shirley kent jou, jouw lichaam en jouw doelen. De kleinschaligheid maakt het bijzonder. En ja, je lacht ook nog.",
       name: "Denise W.",
       variant: "light",
     },
@@ -92,7 +90,7 @@ export const reviewsContent = {
 export const galleryContent = {
   headingStart: "Een kijkje in",
   headingAccent: "Nova Studio",
-  headingEnd: "high-end, kleinschalig, persoonlijk",
+  headingEnd: "",
   images: [
     "/nova-shirley-16.jpg",
     "/studio-1-6.avif",
@@ -105,11 +103,11 @@ export const galleryContent = {
 };
 
 export const membershipsContent = {
-  headingStart: "Kies het",
-  headingAccent: "abonnement",
-  headingEnd: "dat bij jou past",
+  headingStart: "Wat kost",
+  headingAccent: "het?",
+  headingEnd: "",
   subtitle:
-    "Geen grote groepen, geen standaard aanpak. Bij mij is het kleinschalig en persoonlijk,zodat jij de aandacht krijgt die je verdient.",
+    "Duidelijke tarieven, geen kleine lettertjes. Maandelijks opzegbaar.",
   plans: [
     {
       id: 1,
@@ -118,10 +116,10 @@ export const membershipsContent = {
       period: "/maand",
       featured: false,
       features: [
-        "2x per week small-grouptraining (60 min)",
+        "2x per week groepstraining (60 min)",
         "Persoonlijk trainingsschema",
-        "Begeleiding door vaste coach",
-        "Kleine groepen (4–8 personen)",
+        "Vaste coach elke les",
+        "Kleine groepen (4 tot 8 personen)",
         "Zaterdag bootcamp inbegrepen",
         "Maandelijks opzegbaar",
       ],
@@ -133,10 +131,10 @@ export const membershipsContent = {
       period: "/maand",
       featured: true,
       features: [
-        "3x per week small-grouptraining (60 min)",
+        "3x per week groepstraining (60 min)",
         "Persoonlijk trainingsschema",
-        "Begeleiding door vaste coach",
-        "Kleine groepen (4–8 personen)",
+        "Vaste coach elke les",
+        "Kleine groepen (4 tot 8 personen)",
         "Zaterdag bootcamp inbegrepen",
         "Vrij trainen buiten lestijden",
         "Maandelijks opzegbaar",
@@ -149,10 +147,10 @@ export const membershipsContent = {
       period: "/les",
       featured: false,
       features: [
-        "Één-op-één training met Shirley",
+        "Één op één training met Shirley",
         "Volledig op maat: doelen, anatomie, hormonen",
         "Persoonlijk trainingsschema",
-        "Voeding- en leefstijladvies",
+        "Voeding en leefstijladvies",
         "Flexibel inplanbaar",
       ],
     },
@@ -160,10 +158,10 @@ export const membershipsContent = {
 };
 
 export const classesContent = {
-  headingStart: "Rooster",
-  headingAccent: "Small-grouptraining",
+  headingStart: "Wanneer",
+  headingAccent: "kan je komen?",
   subtitle:
-    "Bekijk wanneer de groepslessen zijn ingepland en meld je aan.",
+    "Kies een moment dat in je agenda past. Plan je gratis proefles in en kom gewoon kijken.",
   days: [
     "Maandag",
     "Dinsdag",
@@ -174,37 +172,37 @@ export const classesContent = {
   ],
   schedule: {
     Maandag: [
-      { time: "9.00 – 10.00", className: "Small-grouptraining" },
+      { time: "9.00 – 10.00", className: "Groepstraining" },
       { time: "11.00 – 12.00", className: "Zwangerschapsfitness" },
     ],
     Dinsdag: [
       { time: "10.00 – 11.00", className: "Zwangerschapsfitness" },
-      { time: "19.00 – 20.00", className: "Small-grouptraining" },
+      { time: "19.00 – 20.00", className: "Groepstraining" },
     ],
     Woensdag: [
-      { time: "9.00 – 10.00", className: "Small-grouptraining" },
+      { time: "9.00 – 10.00", className: "Groepstraining" },
       { time: "11.00 – 12.00", className: "Zwangerschapsfitness" },
     ],
     Donderdag: [
-      { time: "10.00 – 11.00", className: "Small-grouptraining" },
+      { time: "10.00 – 11.00", className: "Groepstraining" },
       { time: "19.00 – 20.00", className: "Zwangerschapsfitness" },
     ],
     Vrijdag: [
       { time: "9.00 – 10.00", className: "Zwangerschapsfitness" },
-      { time: "11.00 – 12.00", className: "Small-grouptraining" },
+      { time: "11.00 – 12.00", className: "Groepstraining" },
     ],
     Zaterdag: [
-      { time: "10.00 – 11.30", className: "Small-grouptraining" },
+      { time: "10.00 – 11.30", className: "Groepstraining" },
     ],
   } as Record<string, { time: string; className: string }[]>,
   whatsappUrl: "https://wa.me/31612345678?text=Hoi%20Shirley%2C%20ik%20heb%20interesse%20in%20een%20groepsles!",
 };
 
 export const contactContent = {
-  headingStart: "Klaar om te starten bij",
-  headingAccent: "Nova Studio?",
+  headingStart: "Vraag een",
+  headingAccent: "gratis intake aan.",
   subtitle:
-    "Interesse in een proefles of wil je meer weten over hormooncoaching of zwangerschapsfitness? Stel gerust al je vragen, ik sta voor je klaar!",
+    "Vul je naam en telefoonnummer in. Ik bel je terug om samen te kijken wat bij je past. Geen verplichtingen.",
   image: "/nova-contact.jpg",
 };
 
@@ -212,9 +210,9 @@ export const footerContent = {
   description:
     "Nova Studio door Shirley Mujagic",
   menuLinks: [
-    { label: "Over NOVA Studio", href: "#about" },
-    { label: "Diensten", href: "#services" },
-    { label: "Contact", href: "#contact" },
+    { label: "Over Nova Studio", href: "#about" },
+    { label: "Trainingen", href: "#services" },
+    { label: "Gratis intake", href: "#contact" },
   ],
-  copyright: `\u00A9 Copyright ${new Date().getFullYear()} Nova Studio`,
+  copyright: `© Copyright ${new Date().getFullYear()} Nova Studio`,
 };

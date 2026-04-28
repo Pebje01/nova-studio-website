@@ -63,7 +63,7 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 mx-auto w-full max-w-[1440px] px-[20px] lg:px-[68px]">
         <div className="flex items-center">
-          <div className="max-w-[720px]">
+          <div className="max-w-[900px]">
             <motion.h1
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
@@ -87,7 +87,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.15, ease: [0.25, 0.1, 0, 1] }}
-              className="mt-6 lg:mt-10 max-w-[514px] font-sans text-white/80"
+              className="mt-6 lg:mt-10 max-w-[680px] font-sans text-white/80"
               style={{ fontSize: "clamp(14px, 2.5vw, 18px)", lineHeight: 1.5 }}
             >
               {heroContent.subtitle}

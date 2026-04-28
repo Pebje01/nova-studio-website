@@ -77,7 +77,7 @@ export default function Navbar() {
           }}
         >
           <span className="flex items-center gap-2">
-            Boek een proefles
+            Gratis intake
             <motion.span
               className="inline-flex text-[14px] leading-none transition-transform duration-300 group-hover:-rotate-45"
             >
@@ -144,7 +144,7 @@ export default function Navbar() {
                 className="mt-2 bg-sage px-5 py-2 text-center text-xs font-medium text-white"
                 style={{ borderRadius: 50 }}
               >
-                Boek een proefles
+                Gratis intake
               </Link>
             </div>
           </motion.div>
