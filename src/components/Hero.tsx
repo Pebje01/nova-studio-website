@@ -76,10 +76,10 @@ export default function Hero() {
               }}
             >
               {heroContent.headingStart}{" "}
-              <em className="italic">{heroContent.headingAccent}</em>
+              <span>{heroContent.headingAccent}</span>
               <br />
               {heroContent.headingMiddle}{" "}
-              <em className="italic">{heroContent.headingAccent2}</em>{" "}
+              <span>{heroContent.headingAccent2}</span>{" "}
               {heroContent.headingEnd}
             </motion.h1>
 
@@ -87,8 +87,8 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.15, ease: [0.25, 0.1, 0, 1] }}
-              className="mt-6 lg:mt-10 max-w-[680px] font-sans text-white/80"
-              style={{ fontSize: "clamp(14px, 2.5vw, 18px)", lineHeight: 1.5 }}
+              className="mt-6 lg:mt-10 max-w-[860px] font-sans text-white/80"
+              style={{ fontSize: "clamp(14px, 2.5vw, 18px)", lineHeight: 1.6 }}
             >
               {heroContent.subtitle}
             </motion.p>
@@ -96,10 +96,16 @@ export default function Hero() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.3, ease: [0.25, 0.1, 0, 1] }}
+              transition={{ duration: 0.5, delay: 0.25, ease: [0.25, 0.1, 0, 1] }}
               className="mt-10"
             >
-              <ArrowButton href="#memberships" variant="hero">
+              <p
+                className="mb-4 font-sans text-white/70"
+                style={{ fontSize: "clamp(14px, 2.5vw, 18px)" }}
+              >
+                {heroContent.ctaTeaser}
+              </p>
+              <ArrowButton href="#contact" variant="hero">
                 {heroContent.ctaLabel}
               </ArrowButton>
             </motion.div>

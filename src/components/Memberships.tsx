@@ -20,7 +20,7 @@ export default function Memberships() {
           }}
         >
           {membershipsContent.headingStart}{" "}
-          <em className="italic text-sage-dark">{membershipsContent.headingAccent}</em>{" "}
+          <span className="text-sage-dark">{membershipsContent.headingAccent}</span>{" "}
           {membershipsContent.headingEnd}
         </motion.h2>
 

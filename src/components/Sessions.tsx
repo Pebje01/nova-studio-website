@@ -52,9 +52,9 @@ export default function Sessions() {
           }}
         >
           {sessionsContent.headingStart}{" "}
-          <em className="italic text-sage-dark">
+          <span className="text-sage-dark">
             {sessionsContent.headingAccent}
-          </em>
+          </span>
           <br />
           {sessionsContent.headingEnd}
         </motion.h2>
@@ -80,7 +80,7 @@ export default function Sessions() {
               minHeight: "clamp(320px, 45vw, 468px)",
               borderRadius: 20,
               scrollSnapAlign: "start",
-              backgroundColor: ["#ebe6df", "#e4ded6", "#ddd6cc"][i] || "#ddd6cc",
+              backgroundColor: ["#ebe6df", "#d5ddd6", "#e0d4d8", "#ddd8c4"][i] || "#ebe6df",
             }}
           >
             <div>

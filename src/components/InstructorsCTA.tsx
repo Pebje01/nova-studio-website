@@ -30,13 +30,22 @@ export default function InstructorsCTA() {
             }}
           >
             {instructorsCTAContent.headingStart}{" "}
-            <em className="italic text-sage">{instructorsCTAContent.headingAccent}</em>
+            <span className="text-sage">{instructorsCTAContent.headingAccent}</span>
           </h2>
+          {instructorsCTAContent.paragraphs.map((p, i) => (
+            <p
+              key={i}
+              className="mt-4 max-w-[460px] text-white/60"
+              style={{ fontSize: 16, lineHeight: "26px" }}
+            >
+              {p}
+            </p>
+          ))}
           <p
-            className="mt-6 max-w-[460px] text-white/60"
-            style={{ fontSize: 16, lineHeight: "26px" }}
+            className="mt-6 max-w-[460px] text-white/90"
+            style={{ fontSize: 15, lineHeight: "24px", letterSpacing: "0.01em" }}
           >
-            {instructorsCTAContent.subtitle}
+            {instructorsCTAContent.tagline}
           </p>
           <div className="mt-8">
             <ArrowButton href="#memberships" variant="light">

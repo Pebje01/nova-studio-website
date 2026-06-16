@@ -24,7 +24,7 @@ export default function Classes() {
           }}
         >
           {classesContent.headingStart}{" "}
-          <em className="italic text-sage-dark">{classesContent.headingAccent}</em>
+          <span className="text-sage-dark">{classesContent.headingAccent}</span>
         </motion.h2>
 
         <motion.p

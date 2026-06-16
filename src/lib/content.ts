@@ -15,7 +15,8 @@ export const heroContent = {
   headingAccent2: "Purmerend",
   headingEnd: "",
   subtitle:
-    "Bij Nova Studio train je één op één of in een kleine groep, bij mij thuis in mijn nieuwe sportstudio. Met persoonlijke aandacht en een holistische aanpak werken we aan een nieuwe, fittere jij. Vraag je gratis intake aan!",
+    "Ik geloof dat elke vrouw zich sterk, energiek en thuis in haar eigen lichaam mag voelen. Daarom help ik vrouwen hun lichaam beter te begrijpen, zodat ze leren samenwerken met hun lichaam in plaats van ertegen te vechten.",
+  ctaTeaser: "Klinkt dit als iets wat bij jou past?",
   ctaLabel: "Gratis intake aanvragen",
   heroImage: "/nova-hero-1.jpg",
   heroCircleImage: "/nova-shirley-24.jpg",
@@ -34,15 +35,21 @@ export const sessionsContent = {
     },
     {
       id: 2,
-      title: "Training met 2 à 3 personen",
+      title: "Small group training",
       description:
-        "Train samen met een vriendin, partner of collega. Je krijgt persoonlijke begeleiding, maar deelt de energie en motivatie. Het beste van personal training, samen.",
+        "Train in een kleine vaste groep met maximale persoonlijke aandacht. Intensief, gezellig en voor elk niveau.",
     },
     {
       id: 3,
-      title: "Kleine groepstraining",
+      title: "Zwangerschapsfitness",
       description:
-        "Trainen in een kleine vaste groep. Denk aan Bootcamp, Booty & Burn en andere lessen. Intensief, gezellig en voor elk niveau.",
+        "Veilig en verantwoord bewegen tijdens je zwangerschap. Afgestemd op jouw lichaam en jouw fase. Zodat je je sterk en energiek voelt gedurende de hele zwangerschap.",
+    },
+    {
+      id: 4,
+      title: "Na de bevalling",
+      description:
+        "Herstel op jouw tempo, met begeleiding die écht rekening houdt met wat jouw lichaam heeft meegemaakt. Stap voor stap terug naar jezelf.",
     },
   ],
 };
@@ -50,8 +57,12 @@ export const sessionsContent = {
 export const instructorsCTAContent = {
   headingStart: "Over",
   headingAccent: "Nova Studio",
-  subtitle:
-    "Ik ben Shirley, gecertificeerd personal trainer. Nova Studio is mijn eigen studio aan huis in Purmerend. Geen grote sportschool, geen nummertje trekken. Bij mij weet ik wie je bent, wat je wil en wat je nodig hebt. Dat merk je meteen.",
+  paragraphs: [
+    "Ik geloof dat elke vrouw zich sterk, energiek en thuis in haar eigen lichaam mag voelen. Daarom help ik vrouwen hun lichaam beter te begrijpen, zodat ze leren samenwerken met hun lichaam in plaats van ertegen te vechten.",
+    "Want meer resultaat vraagt niet altijd om harder werken. Je hoeft niet nóg minder te eten of nóg meer te sporten. Wanneer je begrijpt wat jouw lichaam nodig heeft en het juiste plan volgt, ontstaat er ruimte voor duurzame verandering, meer energie en meer zelfvertrouwen.",
+    "Zodat je niet alleen trots bent op wat je bereikt, maar ook op wie je bent.",
+  ],
+  tagline: "Vertrouw het proces. Werk met je lichaam. De rest volgt.",
   ctaLabel: "Gratis intake inplannen",
   image: "/nova-shirley-24.jpg",
 };

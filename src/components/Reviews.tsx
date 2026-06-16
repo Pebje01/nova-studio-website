@@ -34,7 +34,7 @@ export default function Reviews() {
           }}
         >
           {reviewsContent.headingStart}{" "}
-          <em className="italic text-sage-dark">{reviewsContent.headingAccent}</em>{" "}
+          <span className="text-sage-dark">{reviewsContent.headingAccent}</span>{" "}
           {reviewsContent.headingEnd}
         </motion.h2>
 

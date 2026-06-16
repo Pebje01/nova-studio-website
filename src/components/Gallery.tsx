@@ -20,7 +20,7 @@ export default function Gallery() {
           }}
         >
           {galleryContent.headingStart}{" "}
-          <em className="italic text-sage-dark">{galleryContent.headingAccent}</em>{" "}
+          <span className="text-sage-dark">{galleryContent.headingAccent}</span>{" "}
           {galleryContent.headingEnd}
         </motion.h2>
 
