@@ -15,6 +15,7 @@ interface ArrowButtonProps {
   className?: string;
   fullWidth?: boolean;
   style?: React.CSSProperties;
+  disabled?: boolean;
 }
 
 const variantBase: Record<Variant, string> = {
@@ -81,6 +82,7 @@ export default function ArrowButton({
   className = "",
   fullWidth = false,
   style: styleProp,
+  disabled = false,
 }: ArrowButtonProps) {
   const mergedStyle = styleProp ? { ...sharedStyle, ...styleProp } : sharedStyle;
   const [hovered, setHovered] = useState(false);
@@ -116,13 +118,14 @@ export default function ArrowButton({
     <motion.button
       type={type}
       onClick={onClick}
+      disabled={disabled}
       onHoverStart={() => setHovered(true)}
       onHoverEnd={() => setHovered(false)}
       whileHover={{ y: -2 }}
       whileTap={{ y: 0 }}
       transition={{ duration: 0.2, ease: [0.4, 0, 0.2, 1] }}
       className={baseClasses}
-      style={buttonStyle}
+      style={{ ...buttonStyle, opacity: disabled ? 0.6 : 1 }}
     >
       {inner}
     </motion.button>
