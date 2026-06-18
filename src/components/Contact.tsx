@@ -7,7 +7,7 @@ import { contactContent } from "@/lib/content";
 import ArrowButton from "@/components/ui/ArrowButton";
 
 export default function Contact() {
-  const diensten = ["Personal training", "Small group training", "Zwangerschapsfitness", "Na de bevalling"];
+  const diensten = ["Personal training", "Small group training", "Zwangerschapsfitness", "Na de bevalling", "Zwanger en Bevallen"];
   const [form, setForm] = useState({ voornaam: "", achternaam: "", email: "", bericht: "", voorkeur: "" });
   const [interesse, setInteresse] = useState<string[]>([]);
 

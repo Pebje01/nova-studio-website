@@ -64,7 +64,7 @@ export const instructorsCTAContent = {
   ],
   tagline: "Vertrouw het proces. Werk met je lichaam. De rest volgt.",
   ctaLabel: "Gratis intake inplannen",
-  image: "/nova-shirley-24.jpg",
+  image: "/nova-shirley-18.jpg",
 };
 
 export const reviewsContent = {
