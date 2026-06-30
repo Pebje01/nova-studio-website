@@ -10,6 +10,7 @@ const slideImages = [
   { src: "/nova-hero-1.jpg", alt: "Nova Studio" },
   { src: "/nova-hero-2.jpg", alt: "Nova Studio fitness" },
   { src: "/nova-hero-3.jpg", alt: "Nova Studio sfeer" },
+  { src: "/nova-hero-4.jpg", alt: "Shirley aan het trainen in Nova Studio" },
 ];
 
 const kenBurnsVariants = [

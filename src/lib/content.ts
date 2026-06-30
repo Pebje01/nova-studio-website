@@ -10,7 +10,7 @@ export const navLinks = [
 
 export const heroContent = {
   headingStart: "Personal training en",
-  headingAccent: "bootcamp",
+  headingAccent: "small group training",
   headingMiddle: "in",
   headingAccent2: "Purmerend",
   headingEnd: "",
@@ -41,7 +41,7 @@ export const sessionsContent = {
     },
     {
       id: 3,
-      title: "Zwangerschapsfitness",
+      title: "Zwangerschaps fitness",
       description:
         "Veilig en verantwoord bewegen tijdens je zwangerschap. Afgestemd op jouw lichaam en jouw fase. Zodat je je sterk en energiek voelt gedurende de hele zwangerschap.",
     },
@@ -64,7 +64,7 @@ export const instructorsCTAContent = {
   ],
   tagline: "Vertrouw het proces. Werk met je lichaam. De rest volgt.",
   ctaLabel: "Gratis intake inplannen",
-  image: "/nova-shirley-19.jpg",
+  image: "/nova-shirley-3.jpg",
 };
 
 export const reviewsContent = {

@@ -88,8 +88,8 @@ export default function Sessions() {
                 <LotusIconSmall />
               </div>
               <h3
-                className="font-serif font-normal text-brown-dark"
-                style={{ fontSize: 32, lineHeight: "34px" }}
+                className="font-serif font-normal text-brown-dark hyphens-auto break-words"
+                style={{ fontSize: "clamp(26px, 7vw, 32px)", lineHeight: 1.08 }}
               >
                 {session.title}
               </h3>
