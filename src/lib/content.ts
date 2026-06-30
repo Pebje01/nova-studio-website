@@ -64,7 +64,7 @@ export const instructorsCTAContent = {
   ],
   tagline: "Vertrouw het proces. Werk met je lichaam. De rest volgt.",
   ctaLabel: "Gratis intake inplannen",
-  image: "/nova-shirley-24.jpg",
+  image: "/nova-shirley-19.jpg",
 };
 
 export const reviewsContent = {
@@ -83,9 +83,9 @@ export const reviewsContent = {
     },
     {
       id: 2,
-      title: "Zo fijn: sporten op mijn eigen tempo.",
-      text: "Ik was bang om te sporten tijdens mijn zwangerschap, maar bij Shirley voelde ik me meteen op mijn gemak. Ze weet precies wat veilig is en zorgt dat het nooit saai wordt. Ik heb me de hele zwangerschap sterk gevoeld.",
-      name: "Fatima A.",
+      title: "Fijn en vertrouwd weer sporten na zwangerschap.",
+      text: "Na mijn zwangerschap had ik weinig motivatie om te fitnessen. Ik merkte echter dat ik me niet krachtig en zelfverzekerd genoeg voelde en besloot toch maar weer actie te ondernemen. Shirley maakt het minder vervelend om te gaan, en ze oordeelt nooit. Bovendien snapt ze precies wat iemand nodig heeft, in plaats van een streng fitness regime op te dringen kijkt ze naar de persoon en hoe je die in zijn/haar kracht zet. Daarnaast kunnen we ook altijd lachen en ben ik toch weer blij dat ik geweest ben. Het is toch gezelliger dan de sportschool! :)",
+      name: "Daley Jansen",
       variant: "dark",
     },
     {
@@ -106,6 +106,7 @@ export const galleryContent = {
     "/nova-shirley-16.jpg",
     "/studio-1-6.avif",
     "/studio-1-7.avif",
+    "/studio-1-5.avif",
   ],
   extraImages: [
     "/nova-shirley-20.jpg",

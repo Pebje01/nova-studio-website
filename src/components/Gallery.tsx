@@ -24,8 +24,8 @@ export default function Gallery() {
           {galleryContent.headingEnd}
         </motion.h2>
 
-        {/* 3 foto's naast elkaar */}
-        <div className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-3">
+        {/* 4 foto's in een 2x2 grid */}
+        <div className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2">
           {galleryContent.images.map((src, i) => (
             <motion.div
               key={src}
