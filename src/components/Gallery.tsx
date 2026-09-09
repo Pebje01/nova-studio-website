@@ -33,9 +33,9 @@ export default function Gallery() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.45, delay: 0.1 * i, ease: [0.25, 0.1, 0, 1] }}
-              className="relative overflow-hidden"
+              className={`relative overflow-hidden ${i === 0 ? "sm:col-span-2" : ""}`}
               style={{
-                height: "clamp(220px, 32vw, 520px)",
+                height: i === 0 ? "clamp(260px, 42vw, 620px)" : "clamp(220px, 32vw, 520px)",
                 borderRadius: 16,
               }}
             >
@@ -43,6 +43,8 @@ export default function Gallery() {
                 src={src}
                 alt={`Nova Studio ${i + 1}`}
                 fill
+                priority={i === 0}
+                sizes={i === 0 ? "(min-width: 640px) 100vw, 100vw" : "(min-width: 640px) 50vw, 100vw"}
                 className="object-cover"
               />
             </motion.div>

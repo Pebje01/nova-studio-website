@@ -57,7 +57,8 @@ export default function Hero() {
               priority={current === 0}
             />
           </motion.div>
-          <div className="absolute inset-0 bg-black/30" />
+          <div className="absolute inset-0 bg-black/20" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/30 sm:bg-gradient-to-r sm:from-black/45 sm:via-black/15 sm:to-transparent" />
         </motion.div>
       </AnimatePresence>
 
@@ -88,7 +89,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.15, ease: [0.25, 0.1, 0, 1] }}
-              className="mt-6 lg:mt-10 max-w-[860px] font-sans text-white/80"
+              className="mt-6 lg:mt-10 max-w-[860px] font-sans text-white/90"
               style={{ fontSize: "clamp(14px, 2.5vw, 18px)", lineHeight: 1.6 }}
             >
               {heroContent.subtitle}
@@ -101,7 +102,7 @@ export default function Hero() {
               className="mt-10"
             >
               <p
-                className="mb-4 font-sans text-white/70"
+                className="mb-4 font-sans text-white/85"
                 style={{ fontSize: "clamp(14px, 2.5vw, 18px)" }}
               >
                 {heroContent.ctaTeaser}

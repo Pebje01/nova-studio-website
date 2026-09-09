@@ -51,7 +51,10 @@ export default function Contact() {
   const inputStyle = { fontSize: 16, borderRadius: 16 };
 
   return (
-    <section id="contact" className="bg-sage-dark py-[60px] lg:py-[160px]" style={{ borderRadius: "40px 40px 0 0" }}>
+    <section
+      id="contact"
+      className="bg-sage-dark py-[60px] rounded-none lg:py-[160px] lg:rounded-t-[40px]"
+    >
       <div className="mx-auto max-w-[1440px] px-[20px] lg:px-[68px]">
         <div className="flex flex-col items-center gap-10 lg:flex-row lg:items-stretch lg:gap-16">
           {/* Form */}
