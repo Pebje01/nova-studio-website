@@ -152,10 +152,10 @@ export const galleryContent = {
   headingAccent: "Nova Studio",
   headingEnd: "",
   images: [
+    "/nova-studio-exterieur.jpg",
+    "/nova-studio-interieur-1.jpg",
     "/nova-shirley-16.jpg",
-    "/studio-1-6.avif",
-    "/studio-1-7.avif",
-    "/studio-1-5.avif",
+    "/nova-studio-interieur-2.jpg",
   ],
   extraImages: [
     "/nova-shirley-20.jpg",
