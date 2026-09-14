@@ -162,6 +162,7 @@ export default function Contact() {
                           value={optie}
                           checked={form.voorkeur === optie}
                           onChange={handleChange}
+                          required
                           className="accent-white"
                         />
                         <span className="text-white/80" style={{ fontSize: 15 }}>{optie}</span>
