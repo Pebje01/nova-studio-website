@@ -8,7 +8,7 @@ import ArrowButton from "@/components/ui/ArrowButton";
 
 export default function Contact() {
   const diensten = ["Personal training", "Small group training", "Zwanger", "Bevallen"];
-  const [form, setForm] = useState({ voornaam: "", achternaam: "", email: "", bericht: "", voorkeur: "" });
+  const [form, setForm] = useState({ voornaam: "", achternaam: "", email: "", telefoon: "", bericht: "", voorkeur: "" });
   const [interesse, setInteresse] = useState<string[]>([]);
 
   const toggleInteresse = (dienst: string) => {
@@ -34,6 +34,7 @@ export default function Contact() {
           subject: `Nieuwe intakeaanvraag van ${form.voornaam} ${form.achternaam}`,
           name: `${form.voornaam} ${form.achternaam}`,
           email: form.email,
+          Telefoonnummer: form.telefoon,
           "Ik heb interesse in": interesse.length ? interesse.join(", ") : "niet opgegeven",
           "Communicatievoorkeur": form.voorkeur || "niet opgegeven",
           "Vragen of opmerkingen": form.bericht || "",
@@ -106,16 +107,32 @@ export default function Contact() {
                     style={inputStyle}
                   />
                 </div>
-                <input
-                  name="email"
-                  type="email"
-                  placeholder="E-mailadres"
-                  value={form.email}
-                  onChange={handleChange}
-                  required
-                  className={inputClass}
-                  style={inputStyle}
-                />
+                <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
+                  <input
+                    name="email"
+                    type="email"
+                    placeholder="E-mailadres"
+                    value={form.email}
+                    onChange={handleChange}
+                    required
+                    className={inputClass}
+                    style={inputStyle}
+                  />
+                  <input
+                    name="telefoon"
+                    type="tel"
+                    inputMode="tel"
+                    autoComplete="tel"
+                    placeholder="Telefoonnummer"
+                    value={form.telefoon}
+                    onChange={handleChange}
+                    required
+                    pattern="[+0-9\s\(\)\-]{10,}"
+                    title="Vul een geldig telefoonnummer in, bijvoorbeeld 06 12345678"
+                    className={inputClass}
+                    style={inputStyle}
+                  />
+                </div>
                 <div>
                   <p className="mb-3 font-semibold text-white/90" style={{ fontSize: 14 }}>Ik heb interesse in</p>
                   <div className="grid grid-cols-2 gap-2">
