@@ -30,7 +30,7 @@ export default function Contact() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          access_key: "6221382d-90f0-4594-aa8a-639976000685",
+          access_key: "b08ad7cc-3ac2-45e2-b717-a3b47278e11d",
           subject: `Nieuwe intakeaanvraag van ${form.voornaam} ${form.achternaam}`,
           name: `${form.voornaam} ${form.achternaam}`,
           email: form.email,
