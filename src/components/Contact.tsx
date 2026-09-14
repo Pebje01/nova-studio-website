@@ -18,6 +18,8 @@ export default function Contact() {
   };
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
+  const telefoonVerplicht = form.voorkeur === "Bellen" || form.voorkeur === "WhatsApp";
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm((f) => ({ ...f, [e.target.name]: e.target.value }));
   };
@@ -34,7 +36,7 @@ export default function Contact() {
           subject: `Nieuwe intakeaanvraag van ${form.voornaam} ${form.achternaam}`,
           name: `${form.voornaam} ${form.achternaam}`,
           email: form.email,
-          Telefoonnummer: form.telefoon,
+          Telefoonnummer: form.telefoon || "niet opgegeven",
           "Ik heb interesse in": interesse.length ? interesse.join(", ") : "niet opgegeven",
           "Communicatievoorkeur": form.voorkeur || "niet opgegeven",
           "Vragen of opmerkingen": form.bericht || "",
@@ -123,10 +125,10 @@ export default function Contact() {
                     type="tel"
                     inputMode="tel"
                     autoComplete="tel"
-                    placeholder="Telefoonnummer"
+                    placeholder={telefoonVerplicht ? "Telefoonnummer" : "Telefoonnummer (optioneel)"}
                     value={form.telefoon}
                     onChange={handleChange}
-                    required
+                    required={telefoonVerplicht}
                     pattern="[+0-9\s\(\)\-]{10,}"
                     title="Vul een geldig telefoonnummer in, bijvoorbeeld 06 12345678"
                     className={inputClass}
