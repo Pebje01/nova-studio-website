@@ -5,3 +5,5 @@ tsconfig.tsbuildinfo
 # Sleutels en wachtwoorden horen nooit in git
 .env*
 !.env.example
+.DS_Store
+.claude/

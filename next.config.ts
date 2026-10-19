@@ -1,6 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Kleine productie-image: alleen wat de server echt nodig heeft
+  output: "standalone",
   images: {
     remotePatterns: [
       { protocol: "https", hostname: "cdn.prod.website-files.com" },
